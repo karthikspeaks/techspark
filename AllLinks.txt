@@ -1,0 +1,1430 @@
+R981037
+
+ 2 = x - 0.3x
+
+HTTP / protocols
+
+afp://10.142.220.202
+
+http://en.wikipedia.org/wiki/List_of_network_protocols_%28OSI_model%29
+
+Comparison of JMS providers
+http://predic8.com/activemq-hornetq-rabbitmq-apollo-qpid-comparison.htm
+http://java.dzone.com/articles/exploring-message-brokers
+
+JAX-WS implementation
+http://www.mkyong.com/webservices/jax-ws/jax-ws-hello-world-example/
+
+
+Second level caching guts
+http://www.javalobby.org/java/forums/t48846.html
+
+Best practices
+
+http://www.ibm.com/developerworks/websphere/techjournal/0405_brown/0405_brown.html
+
+J2EE patterns
+http://www.precisejava.com/javaperf/j2ee/Patterns.htm
+
+Protocol details.
+Algorithms
+
+https://class.coursera.org/algo2-002/lecture
+http://freevideolectures.com/Course/2279/Data-Structures-And-Algorithms#
+
+Princeton links
+Stanford links
+
+Troubleshooting servers
+http://www.techrepublic.com/article/when-good-servers-go-bad-ten-troubleshooting-tips-to-get-a-server-back-up-and-running/
+
+INstrumentation
+
+http://javapapers.com/core-java/java-instrumentation/
+
+Programming tests
+http://www.programcreek.com/2012/11/top-10-algorithms-for-coding-interview/
+
+
+Search 
+sorting
+
+Problems like TSP, Graphs
+
+http://www.techgig.com/jobs/Core-Java-J2EE-Architect-Salary-50-to-70-Lakhs-/50973616/
+
+Java / J2EE, EJB / JMS,Oracle, MySQL, Oracle XDB, HSQLDB, Postgres, Cassandra, Mongo DB,Web Services (WSDL, REST), Struts, JSP, Servlets and JSF,JBoss, 
+Weblogic and Tomcat,Spring, Axis2, JPA2, Hibernate, Quartz, MINA, JBoss Web service Transactions (XTS), Drools Rules, Drools Workflows, JAXB, Castor, JIBX, Hazelcast, EhCache
+
+USHA 
+http://tutoriz.com/Thread-NEW-2014-15-ASP-NET-INTERVIEW-QUESTIONS-AND-ANSWERS-PDF
+
+rajagopalan@edcellence.in
+
+Virtualization
+
+Type 2 best virtualilzation software for type 2 (production worthy).
+
+These depend on hardawre virtualization
+KVM
+Qemu
+
+Full Virtualization
+para virtualization - Guest and Host code changed - cannot work with properitary os
+
+hardware assisted Virtualization
+Intel VT
+AMD V
+
+Dev stack
+
+Paas Frameworks
+elastic bean stack
+Cloudfoundry
+Cloud Bees
+Google app engine
+Force.com
+OpenShift
+Heroku
+
+Docker ******
+Dokku
+
+On demand self service resource provisioning
+Broad network access
+resource polling
+
+Rapid elasticity
+Metered service
+Centralized Control
+
+Pass thru  - direct hardare access
+
+Cloud SDN, Openstack, Amazon Webservices
+******
+
+Intro to network security
+http://www.interhack.net/pubs/network-security/
+
+EIP - Apache camel
+
+http://camel.apache.org/tutorials.html
+http://java.dzone.com/articles/apache-camel-tutorial-eip
+
+Algorithms
+
+https://www.cs.princeton.edu/~rs/AlgsDS07/
+
+Princeton link
+http://algs4.cs.princeton.edu/44sp/
+
+Spring by example 
+
+http://www.springbyexample.org/examples/index.html
+
+http://splashfind.in/Top_100_Indian_Job_Websites.html
+
+
+BUILD REST Service
+
+JAX - WS
+http://docs.oracle.com/javaee/6/tutorial/doc/giepu.html
+
+Spring Rest
+https://spring.io/guides/gs/rest-service/
+
+
+SQL Practice
+http://www.sql-ex.ru/exercises.php?N=-7%20&X=1
+
+Data structures and Algorithms
+http://www.javaworld.com/article/2073390/core-java/datastructures-and-algorithms-part-1.html
+
+Tree traversal
+http://www.javabeat.net/binary-search-tree-traversal-java/
+
+Practice online
+http://codingbat.com/java/Logic-2
+
+Integration Testing
+http://arquillian.org/guides/getting_started/
+http://docs.jboss.org/arquillian/reference/1.0.0.Alpha1/en-US/html_single/
+http://www.javaworld.com/article/2099020/open-source-tools/integrating-arquillian-and-jbehave.html
+http://www.citrusframework.org/
+
+Comparison of behaviour driven testing
+http://java.dzone.com/articles/brief-comparison-bdd
+
+ShrinkWrap
+http://arquillian.org/guides/shrinkwrap_introduction/
+
+SQL Demystified
+http://code.tutsplus.com/articles/sql-for-beginners-part-3-database-relationships--net-8561
+
+Refactoring legacy code
+http://code.tutsplus.com/series/refactoring-legacy-code--cms-633
+
+Architecture Definition
+http://www.ibm.com/developerworks/rational/library/feb06/eeles/
+
+Cloud Computing - Fundas
+http://blog.flux7.com/topic/cloud-computing
+
+Scalable architecture patterns
+http://srinathsview.blogspot.in/2011/10/list-of-known-scalable-architecture.html
+
+RIA
+http://tutorials.jenkov.com/software-architecture/ria-architecture.html
+
+Node Js
+http://www.tutorialspoint.com/nodejs/nodejs_express_framework.htm
+
+Container Virtualization  (Docker)
+http://www.slashroot.in/difference-between-hypervisor-virtualization-and-container-virtualization
+http://www.slashroot.in/docker-tutorial-how-install-and-use-containers
+Docker commands
+https://www.docker.com/tryit
+
+What EA should know
+
+http://careers.simplicable.com/careers/new/101-enterprise-architecture-interview-questions
+
+Software Architecture and TOGAF
+http://www.ivencia.com/index.html?/softwarearchitect/chapter16/chapter16.htm
+
+Architecture decomposition
+
+■ Group 1—Layering or Distribution
+■ Group 2—Exposure, Functionality, or Generality
+■ Group 3—Coupling and Cohesion or Volatility
+■ Group 4—Configuration
+■ Group 5—Planning and Tracking or Work Assignment
+
+I do :
+
+Weekly bug scrub
+Requirements capture with BA/Product managers
+During heavy features - Requirement clarification meeting
+
+Architecture Task Blocks
+
+Innovation:
+
+Hawk...Metadata fetch..
+Classifications recommendations
+Trails
+
+Questions
+
+What will my job responsibilites
+What will be my designation
+Who will i report into
+
+Good
+Extremely fast learner
+Very good at communication
+Team player
+
+Bad
+
+Five years from now
+Major player within Architecture team
+Innovative ideas - productisation
+
+DNS Servers - How they work
+
+Design patterns, Current Pro
+Skill Sets
+
+
+1 0.13
+980 x
+
+Drools Workflow - Hello World
+http://www.softwarepassion.com/getting-started-with-drools-flow/
+
+primer
+http://www.javagyan.com/preparing-for-an-interview
+
+Arch resposibilites *
+
+Descides what technologies are used
+recommeds development methodologies/frameworks
+Provides HLD and strcuture of project
+Technilcal architect descibes various view of the system adeqautely
+Coding guidelines - logging,exceptions,testting
+Identifies implementation tasks
+Mentors juniours wtih diff and framework tasks
+enforces coding compliance
+estimates cost and benefits for PM
+Makes diffcult edcision of developer positions
+provides technical advice and guidance to PM
+bridges busines documents from BA to technical
+identifies design patterns
+defines mgration requirements
+defines infra requirements
+
+Define project*
+Write Use cases (XP called user stories / epics)
+Prototypes 
+Identify project scope (This feeds use case analysis)
+
+Use case analysis
+Identify actors - user or system services or affected by a usecase
+
+Usecase - http://www.bridging-the-gap.com/what-is-a-use-case/ 
+
+that capture how a user will interact with a solution to achieve a specific goal.
+
+What happens when u access a URL
+
+http://igoro.com/archive/what-really-happens-when-you-navigate-to-a-url/
+
+Annotations
+http://java.dzone.com/articles/how-annotations-work-java
+
+USE CASE FORMAT
+
+Use Case: 5 Buy Goods
+CHARACTERISTIC INFORMATION
+Goal in Context: Buyer issues request directly to our company, expects goods shipped and to be billed.
+Scope: Company
+Level: Summary
+Preconditions: We know Buyer, their address, etc.
+Success End Condition: Buyer has goods, we have money for the goods.
+Failed End Condition: We have not sent the goods, Buyer has not spent the money.
+Primary Actor: Buyer, any agent (or computer) acting for the customer
+Trigger: purchase request comes in.
+MAIN SUCCESS SCENARIO
+1. Buyer calls in with a purchase request.
+2. Company captures buyer’s name, address, requested goods, etc.
+3. Company gives buyer information on goods, prices, delivery dates, etc.
+4. Buyer signs for order.
+5. Company creates order, ships order to buyer.
+6. Company ships invoice to buyer.
+7. Buyers pays invoice.
+EXTENSIONS
+3a. Company is out of one of the ordered items:
+3a1. Renegotiate order.
+4a. Buyer pays directly with credit card:
+4a1. Take payment by credit card (use case 44)
+7a. Buyer returns goods:
+7b. Handle returned goods (use case 105)
+SUB-VARIATIONS
+1. Buyer may use
+phone in,
+fax in,
+use web order form,
+electronic interchange
+7. Buyer may pay by
+cash or money order
+check
+credit card
+RELATED INFORMATION
+Priority: top
+Performance Target: 5 minutes for order, 45 days until paid
+Frequency: 200/day
+Superordinate Use Case: Manage customer relationship (use case 2)
+Subordinate Use Cases:
+Create order (use case 15)
+Take payment by credit card (use case 44)
+Handle returned goods (use case 105)
+Channel to primary actor: may be phone, file or interactice
+Secondary Actors: credit card company, bank, shipping service
+Channels to Secondary Actors:
+OPEN ISSUES
+What happens if we have part of the order?
+What happens if credit card is stolen?
+SCHEDULE
+Due Date: release 1.0
+
+**
+Scope Definition and Estimation
+
+Get Use cases Review by business user / product manager
+Enforce project scope- scope creep is CR 
+
+**
+
+Estimation
+
+soap vs rest
+http://spf13.com/post/soap-vs-rest
+
+soap rest basics
+http://blog.smartbear.com/apis/understanding-soap-and-rest-basics/
+
+Spring Junit testing
+
+http://codesolid.com/spring-unit-testing-using-junit/
+
+**
+Optimistic vs pessimistic locking
+http://blog.couchbase.com/optimistic-or-pessimistic-locking-which-one-should-you-pick
+
+Hibernate versioning
+http://www.java4s.com/hibernate/hibernate-versioning-example-hibernate-versioning-of-objects/
+http://javacompleteexamples.blogspot.in/2009/07/how-db-locking-system-works-in.html
+
+Algorithms
+http://www.programcreek.com/2012/11/top-10-algorithms-for-coding-interview/
+
+UML 2 vs UML1.4
+http://students.mimuw.edu.pl/~zbyszek/posi/ibm/RUP_Eval/manuals/intro/im_uml2.htm
+
+All about datasources
+http://docs.oracle.com/javase/tutorial/jdbc/basics/sqldatasources.html
+
+Oracle Dumping..
+http://dbaranjit.blogspot.in/2013/08/how-expdp-is-faster-than-exp-what.html
+
+expdp new 
+
+Or specifying a directory add directory=DUMPDIR:
+
+ C:\> expdp system/manager schemas=user1 dumpfile=user1.dpdmp directory=DUMPDIR
+With older export utility, you can export to your working directory, and even on a client machine that is remote from the server, using:
+
+ $ exp system/manager owner=user1 file=user1.dmp
+
+Oracle Listener start / stop
+lsnrctl start / stop 
+
+spring  Questions and answers
+http://www.javacodegeeks.com/2014/05/spring-interview-questions-and-answers.html
+
+Java versions history
+http://javapapers.com/core-java/java-features-and-history/
+
+Normal forms
+http://www.oracle.com/technetwork/issue-archive/2011/11-sep/o51sql-453459.html
+
+Inter thread communcation / Java concurrent
+
+http://www.javaworld.com/article/2078809/java-concurrency/java-101-the-next-generation-java-concurrency-without-the-pain-part-1.html?null
+
+Oracle Query plan
+http://www.dwbiconcepts.com/database/22-database-oracle/26-oracle-query-plan-a-10-minutes-guide.html
+
+Tomcat questions
+
+http://www.javaexperience.com/tomcat-server-interview-questions-and-answers/
+
+Negotiation
+http://www.quintcareers.com/salary_negotiation_mistakes.html
+
+good links
+http://www.theserverside.com/feature/How-cloud-computing-is-impacting-enterprise-Java-developers
+
+Estimation techniques
+Function points 
+use case points
+COCOMO
+Story points
+
+ECache Vs Hazelcast
+
+http://vschart.com/compare/ehcache/vs/hazelcast
+
+KN/25359/001261 |
+| EPS Number : KN/25359/001261
+
+TOGAF
+http://www.opengroup.org/public/member/proceedings/q312/togaf_intro_weisman.pdf
+
+Wow
+Reactive programming
+Probablistic databases
+Acturial analysis
+2375750 -wa
+
+Caching frameworks
+Memcached
+http://vschart.com/compare/hazelcast/vs/gemfire/vs/redis-database
+HazelCast
+Redis
+Terracotta
+EhCache 
+Google Guava
+https://code.google.com/p/guava-libraries/wiki/CachesExplained
+
+Cloud computing
+http://www.tutorialspoint.com/cloud_computing/
+
+JBOSS Cache
+
+JVM Level clustering
+http://www.cacheonix.com/articles/How_to_Distribute_Java_Application_on_Multiple_JVMs.htm
+
+Infinispan cache - Consistent hash
+
+Guava - Google in process cache
+
+EHCache from Terracotta
+
+
+Java / JVM internals
+
+http://www.cubrid.org/blog/dev-platform/understanding-jvm-internals/
+
+
+Java Garbage collection
+
+http://www.cubrid.org/blog/dev-platform/understanding-java-garbage-collection/
+
+How Concurrent Mark and Sweep Works
+http://www.insightfullogic.com/blog/2013/may/7/garbage-collection-java-3/
+
+Monitor Java Garbage collection
+http://www.cubrid.org/blog/dev-platform/how-to-tune-java-garbage-collection/ - Divide
+
+http://www.cubrid.org/blog/dev-platform/how-to-monitor-java-garbage-collection/
+
+ABOVE HAS LINKS TO MANY GOOD ARTICLES
+
+Heap dump
+https://www.rallydev.com/community/engineering/outofmemoryerror-fun-heap-dump-analysis
+
+Thread dump
+http://architects.dzone.com/articles/how-analyze-java-thread-dumps
+
+JVM Performance Tuning
+http://www.cubrid.org/blog/dev-platform/the-principles-of-java-application-performance-tuning/
+
+Best practices for Mocking
+http://www.javaworld.com/article/2072724/testing-debugging/best-practices-for-test-driven-development.html
+
+Rules for Cloud Ready applications
+http://www.ibm.com/developerworks/websphere/techjournal/1404_brown/1404_brown.html
+https://weblogs.java.net/blog/sgdev-blog/archive/2014/05/20/how-build-java-based-cloud-application
+
+algorithms
+Fountain codes
+http://blog.notdot.net/2012/01/Damn-Cool-Algorithms-Fountain-Codes
+
+Java sandbox / Security
+http://www.javaworld.com/article/2076989/core-java/java-s-security-architecture.html
+
+Homomorphic hashes
+
+JSR Index - https://jcp.org/en/jsr/all
+
+JSR330 Dependency Injection
+JSR299 Cotexts and Dependency injection
+
+CDI - Contextual Dependency injection 
+
+JBI (ESB) - JSR 208 JBI1.0, JSR312 JBI2.0
+OMG OTS1.1 Java transaction specification
+JSR133 Java memory model and Threading specification
+WSBPEL - Oasis webservice process execution language
+JCA1.6 - JSR322
+Javascript Engine - Rhino 223
+
+SCA - Specification for SOA
+
+JSR220 - EJB 3.0 specification
+
+JSR107 - Inprocess caching
+
+JSR211 - JAX RS pojo http 
+
+JSR166 Concurrency Utils
+
+License Types
+
+v2 ??
+LGPL
+GPL
+Apache 2.0
+
+MIT
+BSD (Like MIT with restriction)
+
+Encoding
+URL Encoding
+
+Unicode Encoding
+
+HEX Encoding
+
+Base64 encoding
+
+Design Principles
+
+SOLID
+	Single responsibility
+	Open closed 
+	Liskov
+	Interface segregation principle
+	dependncy injection
+	
+OCP
+LSP
+DIP
+ISP - Interface segregation principle
+
+Package Cohesion Principles - R2 C2 CR
+
+Release Reuse equivalency principle
+Common closure principle
+Common Reuse principle
+
+
+Package Coupling principles - AD SD SA
+
+Acyclic dependency principle
+Stable dependency principle
+Stable abstractions principle
+
+http://freshersplane.com/consultancies/list-of-placement-consultancies-in-bangalore-bangalore-top-job-consultancies/
+
+Trusted class / Security model
+
+Class loader high level
+http://www.javaworld.com/article/2077260/learn-java/learn-java-the-basics-of-java-class-loaders.html?null
+
+Analyze thread dumps...
+
+D991B3563653
+Architects intervew tips 
+http://www.lifeofanarchitect.com/winning-interview-techniques-for-architects/
+
+
+Scalabilty - availabilty
+http://www.fromdev.com/2013/07/architect-interview-questions-and-answers.html
+
+Python TOGAF
+ANTLR
+http://meri-stuff.blogspot.in/2011/08/antlr-tutorial-hello-word.html
+
+http://www.shine.com/job-search/simple/java-architect/
+
+44.20.7496.3743
+
+Start Reading
+Prepare Resume
+Update Linked in super
+
++44 7741503889
+1:00 PM
+my uk number
+
+
+
+*******************
+http://www.just-eat.co.uk/area/tw4-hounslow - TW6 3AF
+
+
+Oblix - Identity management framework
+
+Select
+
+9.5.36.1.0
+Oracle 11.1.0.7.0
+
+BSKYB-DSN-3851 BSkyB EST Phase 3 High Level Design 
+
+http://doogle:90/Download.aspx?ObjectID=!V3!ILDMPRODUCTION1!C!D$296124!D (view only) 
+
+http://doogle/worksitemp/link/V3/ILDMPRODUCTION1/C/D$296124/ (
+
+Naveen
+AIM-ICD-458 and AIM-ANL-503 
+
+Stephen
+We don't particularly map that far, if I recall. The ADI ICD will map ADI -> VCM model, then separately in AIM-REQ-304 in doogle, but it is very old, possibly deprecated?
+So AIM-REQ-304 covers VCM -> M2 model, and is an excel spreadsheet.
+
+http://hungryhouse.co.uk/takeaways/heathrow-tw63af
+
+http://www.pizzahut.co.uk/
+
+domino - from office
+
+http://www.takeaway.com/order-takeaway-hounslow-tw6-3
+
+http://www.curriesonline.co.uk/search.php
+
+http://meal2go.co.uk/takeaway-greater_london/tw6/3-london-heathrow-airport
+
+Snacks
+http://oyechotu.com/home/order_indian_food
+
++441784848559 - me
+
+Not
+
+http://ukfastfoodstoke.com/our_menu.php?categoryId=112871#nav
+
+Things to do...
+
+Visa - 8715
+PV - 10800
+
+296 * 211mm - A4 
+315mm * 211 mm - Legal
+Z2997666
+20/10/2014 19/10/2024
+9810 - 17.94 , 23.92, 29.90
+9811 - 22.5 , 30 , 37.5
+9812  - 28.5 , 40.79 , 53.03
+
+
+I have done my Bachelor Degree with specialization in Information Technology, one of the leading Universities in India. I have maintained balance between academics/ extra curricular activities throughout my school as well as college years. I am seeking for a job in an established organization where I can learn the work culture and develop the job related skills.
+
+Contact me delhincr90@gmail.com
+
+Primary Skills: C, C++, JAVA ,MySQL,C#,Html,Css
+Other Skills : Excellent communication skills , Leadership qualities , Team management , great at analyzing things etc.
+
+What did you do as architect
+
+http://j2eearchitec.blogspot.in/2012/11/javaj2ee-architect-interview-questions.html
+
+NEW SKILS
+C C++ Shell Scripts OS Datastructures
+JSON
+Openstack
+Python 
+Agile, Scrum
+DVB , CA
+
+Open source load balancers
+http://www.inlab.de/articles/free-and-open-source-load-balancing-software-and-projects.html
+
+Architecting for Cloud
+http://highscalability.com/blog/2014/6/5/cloud-architecture-revolution.html - 16
+
+HA and Failover in Cloud Environments
+http://www.ibm.com/developerworks/cloud/library/cl-cloudhighavailability/
+
+Oracle Queries
+http://www.1keydata.com/sql/sql-subquery.html
+
+HLS
+HTTL Live streaming its basically ABR on HTTP
+
+H264
+http://www.h264info.com/h264.html
+
+I Frames , P Frames , B frames
+http://www.streaminglearningcenter.com/articles/producing-h264-video-for-flash-an-overview.html?page=4
+
+SOA / EDA/ ESB
+http://www.ibm.com/developerworks/library/ws-soa-eda-esb/
+
+Transaction Isolation
+http://highscalability.com/blog/2011/2/10/database-isolation-levels-and-their-effects-on-performance-a.html
+
+Iterator fundas
+http://blog.dreasgrech.com/2010/03/javas-iterators-and-iterables.html
+
+Phantom read
+http://sqlwithmanoj.com/2011/07/20/dirty-reads-and-phantom-reads/
+
+Transaction attributes
+http://docs.oracle.com/cd/E19226-01/820-7627/6nisfjnao/index.html
+http://www.developerscrappad.com/572/java/java-ee/making-sense-of-ejb3-x-transaction-attributes-part-1-requires_new/
+
+Interviewing
+
+http://blogs.msdn.com/b/nikhilsi/archive/2013/01/16/design-and-architecture-interview-questions-with-answers.aspx
+
+XP -> and differences from Agile
+
+http://www.objectmentor.com/omSolutions/agile_xp_differences.html
+
+Scrum full online training
+http://scrumtrainingseries.com/Intro_to_Scrum/Intro_to_Scrum.htm
+
+XP Vs Scrum
+http://www.allaboutagile.com/extreme-programming-versus-scrum/
+
+Jboss clustering
+https://docs.jboss.org/jbossas/jboss4guide/r5/html/cluster.chapt.html
+
+Tomcat clustering
+http://tomcat.apache.org/tomcat-6.0-doc/cluster-howto.html
+
+XSD namespace
+http://www.liquid-technologies.com/Tutorials/XmlSchemas/XsdTutorial_04.aspx
+
+XSD
+DTD
+Relaxng - Trang (Relaxng to XSD)
+Schematron
+
+Scalability Blogs and Webinars
+http://highscalability.com/blog/category/blog
+
+Oracle
+http://skillbuilders.com/webinars/webinar.cfm?id=57&title=Learn%20How%20To%20Use%20Oracle%20Subqueries
+
+DevOps
+http://www.jedi.be/blog/2010/02/12/what-is-this-devops-thing-anyway/
+
+Interview qns
+http://www.javagyan.com/preparing-for-an-interview
+
+java enumerations
+http://docs.oracle.com/javase/tutorial/java/javaOO/enum.html
+
+JCA 
+
+Connnector 1.5
+
+Hibernate Interview questions
+http://www.javatpoint.com/hibernate-interview-questions
+
+Hibernate second level cache
+
+http://howtodoinjava.com/2013/07/02/how-hibernate-second-level-cache-works/
+
+Hibernate Inheritance
+http://www.javatpoint.com/hibernate-inheritance-mapping-tutorial
+
+http://howtodoinjava.com/java-interview-questions/
+
+Closures
+http://en.wikipedia.org/wiki/Closure_%28computer_programming%29
+
+Automated testing
+
+Continuos integration.
+
+WSDL formats
+
+REST Transactions
+http://www.infoq.com/presentations/Transactions-HTTP-REST
+
+Class loaders
+
+http://www.onjava.com/pub/a/onjava/2005/01/26/classloading.html?page=2
+
+Thread context class loaders
+http://www.javaworld.com/article/2077344/core-java/find-a-way-out-of-the-classloader-maze.html
+
+
+http://docs.oracle.com/javase/tutorial/ext/basics/load.html
+
+http://www.onjava.com/pub/a/onjava/2003/11/12/classloader.html
+
+Classloader basics
+http://www.javaworld.com/article/2077260/learn-java/learn-java-the-basics-of-java-class-loaders.html?null
+
+highscalability.com
+
+Grid - Space computing
+
+Gigaspaces
+Oracle coherence
+
+http://gridgain.com/resources/feature-comparisons/
+
+http://gojko.net/2009/06/01/oracle-coherence-vs-gigaspaces-xap/
+
+Redis crash course
+http://redis.io/topics/data-types-intro
+
+SingleTon abuses
+http://snehaprashant.blogspot.co.uk/2009/01/singleton-pattern-in-java.html
+
+Perfect singleton
+http://howtodoinjava.com/2012/10/22/singleton-design-pattern-in-java/#lazy_initialization
+
+Trails
+
+Sample architectures for large system.
+https://www.open2study.com/courses/introduction-to-enterprise-architecture
+
+Ansible
+Puppet vs chef - 
+Experiment one
+
+Hibernate , JPA refresh
+
+OOA
+http://www.tutorialspoint.com/object_oriented_analysis_design/ooad_object_oriented_analysis.htm
+
+Virtualiztion concepts
+http://itechthoughts.wordpress.com/2009/11/10/virtualization-basics/
+
+Cloud concepts - 
+Experiment with Openstack
+http://docs.openstack.org/
+https://www.openstack.org/summit/san-diego-2012/openstack-summit-sessions/presentation/openstack-101 - Does not work
+http://www.rackspace.com/blog/openstack-101-what-is-openstack-video/
+
+MPEG, DVB, CATV,
+
+http://wwwin.cisco.com/FinAdm/cscore/gss/payroll/apac/tools.shtmlx
+
+http://opennebula.org/eucalyptus-cloudstack-openstack-and-opennebula-a-tale-of-two-cloud-models/
+http://opennebula.org/opennebula-vs-openstack-user-needs-vs-vendor-driven/
+
+http://www.networkworld.com/article/2189981/tech-primers/cloud-platform-comparison--cloudstack--eucalyptus--vcloud-director-and-openstack.html
+Eucalyptus
+cloudstack.
+
+Splunk fundas
+
+Grid computing
+
+VBO and CMS architecture in and out
+
+Spring latest.
+
+Update technology stacks and have few words on all of them
+
+All java version deltas
+
+TCP Dump analysis
+https://danielmiessler.com/study/tcpdump/
+
+UML Revise
+http://www.holub.com/goodies/uml/
+
+Enterprise arch book complete
+
+Design patterns master
+Each one sample
+
+http://www.ebay.co.uk/itm/8-Pads-of-100-Black-Taxi-Cab-Licensed-Taxi-Receipts-800-Receipts-FREE-P-P-/191102357010?pt=UK_CarsParts_Vehicles_CommercialVehicleParts_SM&hash=item2c7e968e12
+
+Quiz - http://www.vincehuston.org/dp/patterns_quiz.html
+
+Design pattern questions
+http://java67.blogspot.in/2012/09/top-10-java-design-pattern-interview-question-answer.html
+
+Process story
+
+Agile, Scrum, Xtreme programming, Feature teams
+
+Sprint formats
+
+Architect documents
+
+Architect tools
+
+Usecase , System requirements
+
+Engineering practices
+Scrum meetings, Traige, Retrospective 	
+
+http://www.softwaretestingtimes.com/2010/04/bug-triage-meeting-process.html
+
+Encoding scheme s all
+
+Scrum vs kanban Vs agile
+
+http://www.infoq.com/news/2009/05/kniberg-kanban-v-scrum
+
+JSR catalogues
+- REST
+- NoSQL - http://www.lynda.com/NoSQL-training-tutorials/1473-0.html
+
+Use cases for NoSQL
+http://highscalability.com/blog/2010/12/6/what-the-heck-are-you-actually-using-nosql-for.html
+
+
+- Threads
+
+Distributed components
+
+Failover concepts, Redundancy supports in stacks
+
+Scripting
+Jython
+
+Python,Groovy,Ruby - Slight
+
+WS-I Basic Profile
+WS-Security, WS-ReliableMessaging, WS-Coordination, and WS-AtomicTransactions specifications
+
+2 Phase commit
+http://docs.oracle.com/cd/E13085_01/doc/timesten.1121/e13068/jta.htm
+
+Proxies
+http://java.dzone.com/articles/power-proxies-java
+
+git commands
+http://guides.railsgirls.com/github/
+
+git add .
+
+git commit -m "type your commit message here"
+
+git push origin master
+
+
+why jax ws better than rpc
+http://web.archive.org/web/20060813120808/http://java.sun.com/developer/technicalArticles/WebServices/high_performance/
+
+The Java Language Specification (JLS),
+Java byte code verification
+JAAS, or the Java Authentication and Authorization Service,
+authentication protocols- Kerberos module
+HTTP basic authentication, SSL mutual authentication, and form-based login.
+RMI over SSL
+
+For web applications that use JavaScript or XSS (cross-site scripting, Type 0, 1, and 2) attacks—In general, the advent of rich internet applications (RIAs) introduce security risks that a JEE architect must be aware of and resolve. 
+
+CISCO Mail group creator
+http://wwwin-tools.cisco.com/itsm/mailer/welcome.do
+FTP Account NDS
+http://inweb01.in.nds.com/ftpaccounts/creator.aspx
+Caching jargons
+http://javalandscape.blogspot.in/2009/01/cachingcaching-algorithms-and-caching.html
+Caching info
+http://balamaci.wordpress.com/2010/01/05/cachingpart3/
+Generic migration
+http://mikescode.wordpress.com/2008/02/16/exporting-a-mysql-table-to-excel-xls-in-java/
+Flyaway DB
+http://flywaydb.org/getstarted/howFlywayWorks.html
+Webservices SAAJ
+http://javarocking.blogspot.in/2011/06/jax-ws-example-saaj-example.html
+Multi Tenanted cloud
+http://www.ibm.com/developerworks/cloud/library/cl-multitenantcloud/
+Spark Architecture
+http://spark.incubator.apache.org/
+Hadoop alternatives
+http://www.bytemining.com/2011/08/hadoop-fatigue-alternatives-to-hadoop/
+ACID Vs BASE
+http://databases.about.com/od/otherdatabases/a/Abandoning-Acid-In-Favor-Of-Base.htm
+JS in RIA
+http://blog.stevensanderson.com/2012/08/01/rich-javascript-applications-the-seven-frameworks-throne-of-js-2012/
+REST Standard
+http://www.ibm.com/developerworks/webservices/library/ws-restful/
+
+FTP Vs SFTP vs FTPS
+http://www.jscape.com/blog/bid/75602/Understanding-Key-Differences-Between-FTP-FTPS-and-SFTP
+
+FTP active vs Passive
+http://www.jscape.com/blog/bid/80512/Active-v-s-Passive-FTP-Simplified
+
+Spring file System scanner
+http://blog.trifork.com/2010/01/13/migrating-content-with-spring-integration-a-real-life-example/
+DOJO documentation
+http://www.glarimy.com/files/dojo19
+JPA 101
+http://tomee.apache.org/jpa-concepts.html
+Thread Dump
+http://helpx.adobe.com/experience-manager/kb/TakeThreadDump.html
+http://www.webnms.com/webnms/help/developer_guide/troubleshooting_tips/creating_threaddump.html
+
+How Does Secure Socket Layer (SSL or TLS) Work?
+http://luxsci.com/blog/how-does-secure-socket-layer-ssl-or-tls-work.html
+http://robertheaton.com/2014/03/27/how-does-https-actually-work/
+
+2PC
+
+quartz job in error state
+a3interface path should be http://udb01:8080/cssim/catv
+
+Missing CMS device
+catvsim properties wrong ip
+
+in streamer server use ip address instead of udb01
+
+Static vs dynamic
+
+Defn of dynamic languages
+https://wiki.cantara.no/display/PE/What+every+architect+should+know+about+scripting+languages
+
+Python
+
+Dojo
+
+SICP structure and interpretation of computer languages
+
+Higher Order functions
+
+http://iwe.cisco.com/web/view-post/post/-/posts?postId=439100045
+
+http://iwe.cisco.com/web/ldsg/findlearning
+
+Go
+
+Python
+Python style of coding.
+doneder
+Objects
+object inheritance
+static variables
+__s__
+private if starts with _
+Duck Typing - behaving like a duck
+Operator Emulation
+List emulation
+Dictionary emulation
+Comparison with eq== 3.0, vs cmp in 2.x 
+Callabale objects = class behaves like methods
+How to make objects iterable = __iter__ and next - Note this is simple next
+__new__ use cases
+Reflection in Python
+getaatr
+setattr
+pass ?
+@classMethod - make static methods - no self
+python also has static methods available to all classes and even exist outside the class
+Patterns - singlet on issues due to non private
+Fucntins are first class citizens 
+pythin is not fucntional but general purpose lang
+Decorators = takes funtion returns functions
+**kwds - python syntax for key word arguments
+
+*args - python sytax for non keyword arguments
+
+@property decorator - used to mask get and set mehtods
+ssh client from python using paramiko
+pexpect - interactive python automation
+scp
+List comprehension
+>>> a=[4,8,6,7]
+>>> d = [x*x for x in a]
+
+>>> m = [x for x in a if x%4==0]
+>>> m
+[4, 8]
+Generators are efficient the iter implementation
+Robot framweork
+
+PIP is like homebrew for instaling python modules
+
+Dynamic webpage creatio
+Bottle
+
+Bottle url params
+
+Multi threading
+multi processing
+
+rsannareddy@yahoo.com - Python Expert
+
+Scala
+
+Dart
+
+Most difficult 
+http://www.matrix67.com/iqtest/
+
+http://www.iq-test.cc/start
+
+Javascripts
+
+https://github.com/tkmagesh/JSChannel/blob/master/Node-Mar-2014/BrowserThreadingModel.html
+
+Jquery
+Jasmine
+underscore.js
+
+apply call
+bind
+this contexts live
+
+require.js - Dependency Injection
+backbonejs.org
+knowckoutjs
+
+angular.js - most trending...
+http://www.smashingmagazine.com/2012/07/27/journey-through-the-javascript-mvc-jungle/
+http://addyosmani.com/blog/javascript-mvc-jungle/
+
+http://todomvc.com/
+
+Nodejs - server side javascript - Single threaded model
+http://www.nodebeginner.org/
+https://www.npmjs.org/
+
+secrets of javascript ninja - by john , author of jquery
+speaking javascript
+nicholas zakas - any book is good - high performance javascript
+
+yuiblog.com/crockford
+
+OPENSTACK
+
+Compute (Nova)[edit]
+OpenStack Compute (Nova) is a cloud computing fabric controller, which is the main part of an IaaS system. It is designed to manage and automate pools of computer resources and can work with widely available virtualization technologies, as well as bare metal and high-performance computing (HPC) configurations. KVM, VMware, and Xen are available choices for hypervisor technology, together with Hyper-V and Linux container technology such as LXC.[26][27]
+
+It is written in Python and uses many external libraries such as Eventlet (for concurrent programming), Kombu (for AMQP communication), and SQLAlchemy (for database access).[28] Compute's architecture is designed to scale horizontally on standard hardware with no proprietary hardware or software requirements and provide the ability to integrate with legacy systems and third-party technologies.
+
+Object Storage (Swift)[edit]
+OpenStack Object Storage (Swift) is a scalable redundant storage system. Objects and files are written to multiple disk drives spread throughout servers in the data center, with the OpenStack software responsible for ensuring data replication and integrity across the cluster. Storage clusters scale horizontally simply by adding new servers. Should a server or hard drive fail, OpenStack replicates its content from other active nodes to new locations in the cluster. Because OpenStack uses software logic to ensure data replication and distribution across different devices, inexpensive commodity hard drives and servers can be used.
+
+In August 2009, Rackspace started the development of the precursor to OpenStack Object Storage, as a complete replacement for the Cloud Files product. The initial development team consisted of nine developers.[29] SwiftStack, an object storage software company, is currently the leading developer for Swift.[citation needed]
+
+Block Storage (Cinder)[edit]
+OpenStack Block Storage (Cinder) provides persistent block-level storage devices for use with OpenStack compute instances. The block storage system manages the creation, attaching and detaching of the block devices to servers. Block storage volumes are fully integrated into OpenStack Compute and the Dashboard allowing for cloud users to manage their own storage needs. In addition to local Linux server storage, it can use storage platforms including Ceph, CloudByte, Coraid, EMC (ScaleIO, VMAX and VNX), GlusterFS, Hitachi Data Systems, IBM Storage (Storwize family, SAN Volume Controller, XIV Storage System, and GPFS), Linux LIO, NetApp, Nexenta, Scality, SolidFire, HP (StoreVirtual and 3PAR StoreServ families) and Pure Storage. Block storage is appropriate for performance sensitive scenarios such as database storage, expandable file systems, or providing a server with access to raw block level storage. Snapshot management provides powerful functionality for backing up data stored on block storage volumes. Snapshots can be restored or used to create a new block storage volume.
+
+Networking (Neutron)[edit]
+OpenStack Networking (Neutron, formerly Quantum[30]) is a system for managing networks and IP addresses. OpenStack Networking ensures the network is not a bottleneck or limiting factor in a cloud deployment, and gives users self-service ability, even over network configurations.
+
+OpenStack Networking provides networking models for different applications or user groups. Standard models include flat networks or VLANs that separate servers and traffic. OpenStack Networking manages IP addresses, allowing for dedicated static IP addresses or DHCP. Floating IP addresses let traffic be dynamically rerouted to any resources in the IT infrastructure, so users can redirect traffic during maintenance or in case of a failure.
+
+Users can create their own networks, control traffic, and connect servers and devices to one or more networks. Administrators can use software-defined networking (SDN) technology like OpenFlow to support high levels of multi-tenancy and massive scale. OpenStack Networking provides an extension framework that can deploy and manage additional network services—such as intrusion detection systems (IDS), load balancing, firewalls, and virtual private networks (VPN).
+
+Dashboard (Horizon)[edit]
+OpenStack Dashboard (Horizon) provides administrators and users a graphical interface to access, provision, and automate cloud-based resources. The design accommodates third party products and services, such as billing, monitoring, and additional management tools. The dashboard is also brandable for service providers and other commercial vendors who want to make use of it. The dashboard is one of several ways users can interact with OpenStack resources. Developers can automate access or build tools to manage resources using the native OpenStack API or the EC2 compatibility API.
+
+Identity Service (Keystone)[edit]
+OpenStack Identity (Keystone) provides a central directory of users mapped to the OpenStack services they can access. It acts as a common authentication system across the cloud operating system and can integrate with existing backend directory services like LDAP. It supports multiple forms of authentication including standard username and password credentials, token-based systems and AWS-style (i.e. Amazon Web Services) logins. Additionally, the catalog provides a queryable list of all of the services deployed in an OpenStack cloud in a single registry. Users and third-party tools can programmatically determine which resources they can access.
+
+Image Service (Glance)[edit]
+OpenStack Image Service (Glance) provides discovery, registration, and delivery services for disk and server images. Stored images can be used as a template. It can also be used to store and catalog an unlimited number of backups. The Image Service can store disk and server images in a variety of back-ends, including OpenStack Object Storage. The Image Service API provides a standard REST interface for querying information about disk images and lets clients stream the images to new servers.
+
+OpenStack.org updates Glance every six months, along with other OpenStack modules. Some of the updates are to catch-up with existing cloud infrastructure services, as OpenStack is comparatively new. Glance adds many enhancements to existing legacy infrastructures. For example, if integrated with VMware, Glance introduces advanced features to the vSphere family such as, vMotion, high availability and dynamic resource scheduling (DRS). vMotion is the live migration of a running VM, from one physical server to another, without service interruption. Thus, it enables a dynamic and automated self-optimizing datacenter, allowing hardware maintenance for the underperforming servers without downtimes.[31][32]
+
+OpenStack's image is an operating system installed on a virtual machine (VM). If a developer adds a variation to an image (as a configuration job) the result is an instance of that image. Subsequently, that instance is an image that developers can add more variations to.
+
+Glance—OpenStack's image service module—is a compute module, as it does not store images, variations, or instances—but rather catalogs them and holds their metadata from Swift or a storage backend datastore. Other modules must communicate with the images metadata through Glance—or example, Heat. Also, Nova can present information about the images, and configure a variation on an image to produce an instance. However, Glance is the only module that can add, delete, share, or duplicate images.[33]
+
+Telemetry (Ceilometer)[edit]
+OpenStack Telemetry Service (Ceilometer) provides a Single Point Of Contact for billing systems, providing all the counters they need to establish customer billing, across all current and future OpenStack components. The delivery of counters is traceable and auditable, the counters must be easily extensible to support new projects, and agents doing data collections should be independent of the overall system.
+
+Orchestration (Heat)[edit]
+Heat is a service to orchestrate multiple composite cloud applications using templates, through both an OpenStack-native REST API and a CloudFormation-compatible Query API.[34]
+
+Database (Trove)[edit]
+Trove is a database-as-a-service provisioning relational and non-relational database engines.[35]
+
+Bare Metal Provisioning (Ironic)[edit]
+Ironic is an incubated OpenStack project that aims to provision bare metal machines instead of virtual machines. It was initially forked from the Nova Baremetal driver and has evolved into a separate program. It is best thought of as a bare-metal hypervisor API and a set of plugins that interact with the bare-metal hypervisors. By default, it will use PXE and IPMI in concert to provision and turn on and off machines, but Ironic supports and can be extended with vendor-specific plugins to implement additional functionality.[36][37]
+
+Multiple Tenant Cloud Messaging (Zaqar)[edit]
+Zaqar is a multi-tenant cloud messaging service for Web developers. It combines the ideas pioneered by Amazon's SQS product with additional semantics to support event broadcasting. The service features a fully RESTful API, which developers can use to send messages between various components of their SaaS and mobile applications by using a variety of communication patterns. Underlying this API is an efficient messaging engine designed with scalability and security in mind. Other OpenStack components can integrate with Zaqar to surface events to end users and to communicate with guest agents that run in the "over-cloud" layer. Cloud operators can leverage Zaqar to provide equivalents of SQS and SNS to their customers. Zaqar was formerly known as Marconi.[38][39]
+
+Elastic Map Reduce (Sahara)[edit]
+Sahara aims to provide users with simple means to provision Hadoop clusters by specifying several parameters like Hadoop version, cluster topology, nodes hardware details and a few more. After a user fills all the parameters, Sahara deploys the cluster in a few minutes. Sahara also provides means to scale already provisioned cluster by adding and removing worker nodes on demand.[40][41]
+
+**OS
+
+safari books online
+
+tkmagesh77@gmail.com
+9901911221
+
+
+Client interview
+
+Gather Business Reqirements
+http://www.batimes.com/articles/questions-for-eliciting-user-requirements.html
+
+Elicit Performance Requirements
+http://www.modernanalyst.com/Careers/InterviewQuestions/tabid/128/ID/324/How-do-you-discover-and-elicit-non-functional-requirements.aspx
+http://searchsoftwarequality.techtarget.com/answer/How-to-elicit-performance-requirements
+http://edevtech.com/blog/save-your-project-elicit-nonfunctional-requirements-effectively/
+
+
+http://redbus2us.com/13-what-questions-are-asked-to-consultants-in-typical-client-interview-from-managers-what-to-respond/
+
+
+How was your previous client’s landscape ? What technology did they use ?
+
+
+What is your experience with your technology ?
+
+
+How did you implement this business scenario in other client’s place ?
+
+
+How was your previous team working model ?
+
+What was your role in previous project ? Briefly explain your role.
+What was your support structure at previous client ?
+What was the change management process you used at previous client?
+What value did you add your old client ?
+
+What were the challenges in implementation ?
+20 customers parallely
+
+What are the best practices you used before ?
+
+Did you work with off-shore model ? explain your experience
+How do you keep up with technology as a consultant ?
+Did you create functional specs before ?
+
+How were documentation standards in previous client?
+
+Smart answers to tough questions
+https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0CCoQFjAC&url=http%3A%2F%2Fwww.businessinsider.com%2F29-smart-answers-to-tough-interview-questions-2012-5%3Fop%3D1&ei=EQrrVPGQKtOLuwSU7oDoAQ&usg=AFQjCNG5sS9L1s6k21NWXARSEj4xApO7Qg&sig2=BvQrK82Bh--fyeT38VyvOg&bvm=bv.86475890,d.c2E
+
+http://careerride.com/HR-Interview-Questions.aspx
+
+Dont know Ness or the EDC standard but 40 % should be good -Tesco , Harman intl
+
+Gross : 20.10  lakhs(Does not include employer PF)
+Employer PF : (10 K*12) = 1.2 lakhs
+Bonus (15% of Gross) = 3 lakhs
+Phone and Internet Reimbursements (2.3K pm+ 2.2 K pm) * 12 months = 0.5 Lakh
+
+Total CTC :  20.10+ 1.2+ 3+ 0.5 = 25 Approx
+
+Available Stock options (In addition to Total CTC) : $6,662.25 @ 63 (USD value in INR) = 4.19 Lakhs
+
+My Questions to them : 
+
+Ofer Segev
+
+Nega - Too assertive
+
+Positive :
+Fast learner, Good communc
+Add value both in Domain and Technically
+Proven team leader
+
+wht position will this be for ?..whom do i report into ?
+What are learning / certification channels at Ness ?
+Under the EDC model what happens to employees when the EDC contract is cancelled ?
+What facilities does Ness provide - like flexi timing, free lunch, work from home etc
+Does company provide corporate phone or internet facilities ?
+Does ness include pf in ctc ?
+Whats the typical raise or bonus at Ness ? yearly, semi ?
+
+What will be the next steps ?
+
+I need 45 days to join...my bonus letter is due within 15 days
+
+is there a signing bonus involved?
+
+
+Binary Search
+
+class BSearchDemo
+{
+   public static void main (String [] args)
+   {
+      int [] x = { -5, 12, 15, 20, 30, 72, 456 };
+      int loIndex = 0;
+      int hiIndex = x.length - 1;
+      int midIndex, srch = 72;
+      while (loIndex <= hiIndex)
+      {
+         midIndex = (loIndex + hiIndex) / 2;
+         if (srch > x [midIndex])
+             loIndex = midIndex + 1;
+         else
+         if (srch < x [midIndex])
+             hiIndex = midIndex - 1;
+         else
+             break;
+      }
+      if (loIndex > hiIndex)
+          System.out.println (srch + " not found");
+      else
+          System.out.println (srch + " found");
+   }
+}
+
+http://www.java2novice.com/java-sorting-algorithms/quick-sort/
+
+
+Bubble sort
+
+// BSortDemo.java
+class BSortDemo
+{
+   public static void main (String [] args)
+   {
+      int i, pass;
+      int [] x = { 20, 15, 12, 30, -5, 72, 456 };
+      for (pass = 0; pass < = x.length - 2; pass++)
+           for (i = 0; i < = x.length - pass - 2; i++)
+                if (x [i] >  x [i + 1])
+                {
+                    int temp = x [i];
+                    x [i] = x [i + 1];
+                    x [i + 1] = temp;
+                }
+      for (i = 0; i <  x.length; i++)
+           System.out.println (x [i]);
+   }
+}
+
+Quick Sort
+
+package com.java2novice.sorting;
+ 
+public class MyQuickSort {
+     
+    private int array[];
+    private int length;
+ 
+    public void sort(int[] inputArr) {
+         
+        if (inputArr == null || inputArr.length == 0) {
+            return;
+        }
+        this.array = inputArr;
+        length = inputArr.length;
+        quickSort(0, length - 1);
+    }
+ 
+    private void quickSort(int lowerIndex, int higherIndex) {
+         
+        int i = lowerIndex;
+        int j = higherIndex;
+        // calculate pivot number, I am taking pivot as middle index number
+        int pivot = array[lowerIndex+(higherIndex-lowerIndex)/2];
+        // Divide into two arrays
+        while (i <= j) {
+            /**
+             * In each iteration, we will identify a number from left side which 
+             * is greater then the pivot value, and also we will identify a number 
+             * from right side which is less then the pivot value. Once the search 
+             * is done, then we exchange both numbers.
+             */
+            while (array[i] < pivot) {
+                i++;
+            }
+            while (array[j] > pivot) {
+                j--;
+            }
+            if (i <= j) {
+                exchangeNumbers(i, j);
+                //move index to next position on both sides
+                i++;
+                j--;
+            }
+        }
+        // call quickSort() method recursively
+        if (lowerIndex < j)
+            quickSort(lowerIndex, j);
+        if (i < higherIndex)
+            quickSort(i, higherIndex);
+    }
+ 
+    private void exchangeNumbers(int i, int j) {
+        int temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+     
+    public static void main(String a[]){
+         
+        MyQuickSort sorter = new MyQuickSort();
+        int[] input = {24,2,45,20,56,75,2,56,99,53,12};
+        sorter.sort(input);
+        for(int i:input){
+            System.out.print(i);
+            System.out.print(" ");
+        }
+    }
+}
+
+
+public static void InsertionSort( int [ ] num)
+{
+    
+    for (int j = 1; j < num.length; j++)    // Start with 1 (not 0)
+    {
+        int key = num[j];
+        for(int i = j - 1; (i >= 0) && (num[ i ] < key); i--)   // Smaller values are moving up
+        {
+        	num[ i+1 ] = num[ i ];
+        }
+        num[ i+1 ] = key;    // Put the key in its proper location
+     }
+}
+
