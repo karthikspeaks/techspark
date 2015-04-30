@@ -1289,6 +1289,36 @@ I need 45 days to join...my bonus letter is due within 15 days
 is there a signing bonus involved?
 
 
+
+behavioral interview, kids:
+
+1.  Get your storytelling hat on.  Get ready to tell the initial story in 2-3 minute chunks.
+
+2.  Create six stories that have the following elements:  
+
+--A tough performance situation you were in (the Situation),
+
+--the key things that you did (stuff that you specifically did) to deal with that situation, the action you took, all the details...
+
+--what happened as a result for you and your company (positive outcomes preferred, but not always necessary)
+
+3. Rehearse the stories, getting the initial response down to 2 to 3 minutes.  Be conversational, don't sound rehearsed/robotic.
+
+4. Be prepared to dig deeper into what the situation was, but especially be ready to dig into the details of what you did, why you did that, and how the skills for the position in question were used in that situation.
+
+5. Stay classy.  Never bash people in your stories.  Talk about challenges when you're setting up the situation, but don't bash bosses, co-workers or customers.  Just talk about how you worked through the challenges.
+
+6. Once you have your six stories down cold, research the dimensions/areas usually probed by interviewers in a behavioral interview.  Create a grid for the stories that you think best matches the dimensions you'll see.  Teamwork, Communication, Drive, Leadership, Project Management, etc.  What you'll find is that even though you've only prepared six stories, you've got at least two stories to tell for each dimension.
+
+7. Go to the interview, stay loose and tell the story, then dig into the details if the interviewing wants to dive it.
+
+That's it.  I swear.  Tell a good story and keep your story list short, but the details strong and vivid.
+
+
+
+http://www.artofmanliness.com/2010/07/02/how-prepare-for-and-rock-a-behavioral-job-interview/
+
+
 Binary Search
 
 class BSearchDemo
