@@ -1,0 +1,98 @@
+2013/12/09 11:58:23.059 [RulesTotalCapture] [ActiveMQ Session Task]:   INFO:  Capturing Rules Total,incrementing total asset count
+2013/12/09 11:58:23.215 [StatusReporterImpl] [ActiveMQ Session Task]:   DEBUG:  Message received from STATUS_REPORTER_INPUT Queue
+2013/12/09 11:58:23.215 [StatusReporterImpl] [ActiveMQ Session Task]:   DEBUG:  Message received from STATUS_REPORTER_INPUT<?xml version="1.0" encoding="UTF-8"?>
+<StatusMessage conversationID="1"  assetID="BDEE0099000013140200"  providerID="160"  xmlns="URN:NNDS:VAM:STATUS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <message>
+        <realm>VOD</realm>
+        <code>4098</code>
+        <levelType>ERROR</levelType>
+        <shortText>ADI failed syntax check.</shortText>
+        <longText>ADI failed syntax check.  Error was Failed to convert ADI to internal model: unexpected element (uri:&quot;&quot;, local:&quot;Run_Time&quot;). Expected elements are &lt;{}X_Exhibition_Date&gt;,&lt;{}X_Conversation_Id&gt;,&lt;{}Subscriber_View_Limit&gt;,&lt;{}Advisories&gt;,&lt;{}X_Offer_Window&gt;,&lt;{}Copy_Protection_Verbose&gt;,&lt;{}Licensing_Window_Start&gt;,&lt;{}Maximum_Viewing_Length&gt;,&lt;{}Copy_Protection&gt;,&lt;{}MSORating&gt;,&lt;{}X_Group_Type&gt;,&lt;{}Genre&gt;,&lt;{}Director&gt;,&lt;{}Product&gt;,&lt;{}Creation_Date&gt;,&lt;{}Display_As_Last_Chance&gt;,&lt;{}Analog_Protection_System&gt;,&lt;{}HDContent&gt;,&lt;{}Asset_Name&gt;,&lt;{}Provider_ID&gt;,&lt;{}X_Offer_Product_Param&gt;,&lt;{}X_Audio_Description_Flag&gt;,&lt;{}X_Offer_Suggested_Price&gt;,&lt;{}Licensing_Window_End&gt;,&lt;{}Constrained_Image_Trigger&gt;,&lt;{}Display_As_New&gt;,&lt;{}Rating&gt;,&lt;{}Country_of_Origin&gt;,&lt;{}CGMS_A&gt;,&lt;{}Studio_Name&gt;,&lt;{}Encryption_Mode_Indicator&gt;,&lt;{}Summary_Short&gt;,&lt;{}Provider&gt;,&lt;{}X_Offer_Template&gt;,&lt;{}Studio&gt;,&lt;{}Type&gt;,&lt;{}Verb&gt;,&lt;{}Audio_Type&gt;,&lt;{}X_Offer_Maximum_Viewing_Length&gt;,&lt;{}Year&gt;,&lt;{}Title_Brief&gt;,&lt;{}Actors&gt;,&lt;{}X_Offer_Template_Param&gt;,&lt;{}Closed_Captioning&gt;,&lt;{}Subtitle_Languages&gt;,&lt;{}Audience&gt;,&lt;{}X_Offer_Planner_Retention&gt;,&lt;{}Asset_ID&gt;,&lt;{}Billing_ID&gt;,&lt;{}Producers&gt;,&lt;{}Summary_Long&gt;,&lt;{}Screen_Format&gt;,&lt;{}Viewing_Can_Be_Resumed&gt;,&lt;{}Version_Major&gt;,&lt;{}X_Subtitle_Flag&gt;,&lt;{}Description&gt;,&lt;{}ISAN&gt;,&lt;{}Asset_Class&gt;,&lt;{}Title&gt;,&lt;{}Languages&gt;,&lt;{}Dubbed_Languages&gt;,&lt;{}Title_Sort_Name&gt;,&lt;{}X_Grace_Period&gt;,&lt;{}Category&gt;,&lt;{}Version_Minor&gt;,&lt;{}X_Sub_Genre&gt;,&lt;{}Suggested_Price&gt;,&lt;{}Summary_Medium&gt;,&lt;{}X_Provider_Code&gt;</longText>
+        <messageDateTime>2013-12-09T11:58:23</messageDateTime>
+    </message>
+</StatusMessage>
+2013/12/09 11:58:23.215 [StatusReporterImpl] [ActiveMQ Session Task]:   INFO:  Saving message to queue.
+2013/12/09 11:58:23.216 [StatusReporterImpl] [ActiveMQ Session Task]:   DEBUG:  Message saved.
+2013/12/09 11:58:23.217 [StatusManager] [ActiveMQ Session Task]:   DEBUG:  Assembling HTTP POST request. Request URL is http://postbackserver:80/
+2013/12/09 11:58:23.217 [StatusManager] [ActiveMQ Session Task]:   DEBUG:  Executing HTTP request
+2013/12/09 11:58:23.243 [RulesFailureCapture] [ActiveMQ Session Task]:   INFO:  Capturing Rules Failure ,incrementing failed asset count
+2013/12/09 11:58:39.480 [VAMMonitoringThread] [Thread-23]:   DEBUG:  Thread-23 executed,waiting for 1s
+2013/12/09 11:58:39.534 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingImageProcessing : 0
+2013/12/09 11:58:39.534 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingIngest : 0
+2013/12/09 11:58:39.534 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingSync : 0
+2013/12/09 11:58:39.534 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingCDNTransfer : 0
+2013/12/09 11:58:39.534 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingContentProcessing : 0
+2013/12/09 11:58:44.086 [ContentFileTidier] [Timer-1]:  AUDIT- INFO:  Running Content File Tidy Up
+2013/12/09 11:58:44.121 [ContentFileTidier] [Timer-1]:   INFO:  Tidying Content Files for asset source: AC1
+2013/12/09 11:58:44.124 [ContentFileTidier] [Timer-1]:   INFO:  Tidy local Content files: asset source: AC1 files to tidy:0
+2013/12/09 11:58:44.124 [ContentFileTidier] [Timer-1]:   INFO:  Completed Tidy of Local Content files: asset source: AC1 files deleted:0
+2013/12/09 11:58:44.124 [ContentFileTidier] [Timer-1]:  AUDIT- INFO:  Finished Content File Tidy Up
+2013/12/09 11:59:09.575 [VAMMonitoringThread] [Thread-23]:   DEBUG:  Thread-23 executed,waiting for 1s
+2013/12/09 11:59:09.650 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingImageProcessing : 0
+2013/12/09 11:59:09.650 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingIngest : 0
+2013/12/09 11:59:09.650 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingSync : 0
+2013/12/09 11:59:09.650 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingCDNTransfer : 0
+2013/12/09 11:59:09.650 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingContentProcessing : 0
+2013/12/09 11:59:19.088 [StatusTidierTask] [Timer-3]:   INFO:  Tidying up status messages
+2013/12/09 11:59:19.122 [StatusTidierTask] [Timer-3]:   INFO:  Finished tidying up
+2013/12/09 11:59:39.687 [VAMMonitoringThread] [Thread-23]:   DEBUG:  Thread-23 executed,waiting for 1s
+2013/12/09 11:59:39.736 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingImageProcessing : 0
+2013/12/09 11:59:39.737 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingIngest : 0
+2013/12/09 11:59:39.737 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingSync : 0
+2013/12/09 11:59:39.737 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingCDNTransfer : 0
+2013/12/09 11:59:39.737 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingContentProcessing : 0
+2013/12/09 11:59:51.490 [RulesTotalCapture] [ActiveMQ Session Task]:   INFO:  Capturing Rules Total,incrementing total asset count
+2013/12/09 11:59:51.646 [StatusReporterImpl] [ActiveMQ Session Task]:   DEBUG:  Message received from STATUS_REPORTER_INPUT Queue
+2013/12/09 11:59:51.647 [StatusReporterImpl] [ActiveMQ Session Task]:   DEBUG:  Message received from STATUS_REPORTER_INPUT<?xml version="1.0" encoding="UTF-8"?>
+<StatusMessage conversationID="1"  assetID="BBCE0099000013140200"  providerID="160"  xmlns="URN:NNDS:VAM:STATUS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <message>
+        <realm>VOD</realm>
+        <code>4098</code>
+        <levelType>ERROR</levelType>
+        <shortText>ADI failed syntax check.</shortText>
+        <longText>ADI failed syntax check.  Error was Failed to convert ADI to internal model: unexpected element (uri:&quot;&quot;, local:&quot;Run_Time&quot;). Expected elements are &lt;{}X_Exhibition_Date&gt;,&lt;{}X_Conversation_Id&gt;,&lt;{}Subscriber_View_Limit&gt;,&lt;{}Advisories&gt;,&lt;{}X_Offer_Window&gt;,&lt;{}Copy_Protection_Verbose&gt;,&lt;{}Licensing_Window_Start&gt;,&lt;{}Maximum_Viewing_Length&gt;,&lt;{}Copy_Protection&gt;,&lt;{}MSORating&gt;,&lt;{}X_Group_Type&gt;,&lt;{}Genre&gt;,&lt;{}Director&gt;,&lt;{}Product&gt;,&lt;{}Creation_Date&gt;,&lt;{}Display_As_Last_Chance&gt;,&lt;{}Analog_Protection_System&gt;,&lt;{}HDContent&gt;,&lt;{}Asset_Name&gt;,&lt;{}Provider_ID&gt;,&lt;{}X_Offer_Product_Param&gt;,&lt;{}X_Audio_Description_Flag&gt;,&lt;{}X_Offer_Suggested_Price&gt;,&lt;{}Licensing_Window_End&gt;,&lt;{}Constrained_Image_Trigger&gt;,&lt;{}Display_As_New&gt;,&lt;{}Rating&gt;,&lt;{}Country_of_Origin&gt;,&lt;{}CGMS_A&gt;,&lt;{}Studio_Name&gt;,&lt;{}Encryption_Mode_Indicator&gt;,&lt;{}Summary_Short&gt;,&lt;{}Provider&gt;,&lt;{}X_Offer_Template&gt;,&lt;{}Studio&gt;,&lt;{}Type&gt;,&lt;{}Verb&gt;,&lt;{}Audio_Type&gt;,&lt;{}X_Offer_Maximum_Viewing_Length&gt;,&lt;{}Year&gt;,&lt;{}Title_Brief&gt;,&lt;{}Actors&gt;,&lt;{}X_Offer_Template_Param&gt;,&lt;{}Closed_Captioning&gt;,&lt;{}Subtitle_Languages&gt;,&lt;{}Audience&gt;,&lt;{}X_Offer_Planner_Retention&gt;,&lt;{}Asset_ID&gt;,&lt;{}Billing_ID&gt;,&lt;{}Producers&gt;,&lt;{}Summary_Long&gt;,&lt;{}Screen_Format&gt;,&lt;{}Viewing_Can_Be_Resumed&gt;,&lt;{}Version_Major&gt;,&lt;{}X_Subtitle_Flag&gt;,&lt;{}Description&gt;,&lt;{}ISAN&gt;,&lt;{}Asset_Class&gt;,&lt;{}Title&gt;,&lt;{}Languages&gt;,&lt;{}Dubbed_Languages&gt;,&lt;{}Title_Sort_Name&gt;,&lt;{}X_Grace_Period&gt;,&lt;{}Category&gt;,&lt;{}Version_Minor&gt;,&lt;{}X_Sub_Genre&gt;,&lt;{}Suggested_Price&gt;,&lt;{}Summary_Medium&gt;,&lt;{}X_Provider_Code&gt;</longText>
+        <messageDateTime>2013-12-09T11:59:51</messageDateTime>
+    </message>
+</StatusMessage>
+2013/12/09 11:59:51.647 [StatusReporterImpl] [ActiveMQ Session Task]:   INFO:  Saving message to queue.
+2013/12/09 11:59:51.647 [StatusReporterImpl] [ActiveMQ Session Task]:   DEBUG:  Message saved.
+2013/12/09 11:59:51.652 [StatusManager] [ActiveMQ Session Task]:   DEBUG:  Assembling HTTP POST request. Request URL is http://postbackserver:80/
+2013/12/09 11:59:51.652 [StatusManager] [ActiveMQ Session Task]:   DEBUG:  Executing HTTP request
+2013/12/09 11:59:51.671 [RulesFailureCapture] [ActiveMQ Session Task]:   INFO:  Capturing Rules Failure ,incrementing failed asset count
+2013/12/09 12:00:09.774 [VAMMonitoringThread] [Thread-23]:   DEBUG:  Thread-23 executed,waiting for 1s
+2013/12/09 12:00:09.824 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingImageProcessing : 0
+2013/12/09 12:00:09.824 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingIngest : 0
+2013/12/09 12:00:09.825 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingSync : 0
+2013/12/09 12:00:09.825 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingCDNTransfer : 0
+2013/12/09 12:00:09.825 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingContentProcessing : 0
+2013/12/09 12:00:39.860 [VAMMonitoringThread] [Thread-23]:   DEBUG:  Thread-23 executed,waiting for 1s
+2013/12/09 12:00:39.909 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingImageProcessing : 0
+2013/12/09 12:00:39.909 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingIngest : 0
+2013/12/09 12:00:39.909 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingSync : 0
+2013/12/09 12:00:39.909 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingCDNTransfer : 0
+2013/12/09 12:00:39.909 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingContentProcessing : 0
+2013/12/09 12:01:09.948 [VAMMonitoringThread] [Thread-23]:   DEBUG:  Thread-23 executed,waiting for 1s
+2013/12/09 12:01:09.994 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingImageProcessing : 0
+2013/12/09 12:01:09.994 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingIngest : 0
+2013/12/09 12:01:09.994 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingSync : 0
+2013/12/09 12:01:09.995 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingCDNTransfer : 0
+2013/12/09 12:01:09.995 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingContentProcessing : 0
+2013/12/09 12:01:40.033 [VAMMonitoringThread] [Thread-23]:   DEBUG:  Thread-23 executed,waiting for 1s
+2013/12/09 12:01:40.084 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingImageProcessing : 0
+2013/12/09 12:01:40.084 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingIngest : 0
+2013/12/09 12:01:40.084 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingSync : 0
+2013/12/09 12:01:40.084 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingCDNTransfer : 0
+2013/12/09 12:01:40.085 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingContentProcessing : 0
+2013/12/09 12:02:10.123 [VAMMonitoringThread] [Thread-23]:   DEBUG:  Thread-23 executed,waiting for 1s
+2013/12/09 12:02:10.178 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingImageProcessing : 0
+2013/12/09 12:02:10.178 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingIngest : 0
+2013/12/09 12:02:10.178 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingSync : 0
+2013/12/09 12:02:10.178 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingCDNTransfer : 0
+2013/12/09 12:02:10.178 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingContentProcessing : 0
+2013/12/09 12:02:40.212 [VAMMonitoringThread] [Thread-23]:   DEBUG:  Thread-23 executed,waiting for 1s
+2013/12/09 12:02:40.250 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingImageProcessing : 0
+2013/12/09 12:02:40.250 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingIngest : 0
+2013/12/09 12:02:40.250 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingSync : 0
+2013/12/09 12:02:40.250 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingCDNTransfer : 0
+2013/12/09 12:02:40.250 [VAMMonitoringThread] [Thread-23]:   DEBUG:  assetsAwaitingContentProcessing : 0
+

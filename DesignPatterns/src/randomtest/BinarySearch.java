@@ -26,7 +26,7 @@ public class BinarySearch {
 
         if(x[mid] == key) System.out.println("Found");
         else if(x[mid] > key){
-            binarySearch(x, mid+1, high, key);
+            binarySearch(x, mid, high, key);
         }
         else if(x[mid] < key){
           binarySearch(x, 0, mid, key);

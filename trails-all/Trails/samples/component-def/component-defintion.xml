@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trailsDefinition>
+    <components>
+        <component>
+            <componentName>VCM</componentName>
+            <baseDirectory>E:/Sample/vcm/</baseDirectory>
+            <email>vcmsupport@cisco.com</email>
+
+            <profiles>
+                <profile id="PropertyFilesOnly">
+                    <description>Export property Files</description>
+                    <task ref="configurationFile"/>
+
+                    <transport>mail</transport>
+                </profile>
+
+                <profile id="LogFilesOnly">
+                    <description>Export log Files</description>
+                    <task ref="loggingFile"/>
+
+                    <transport>ftp</transport>
+                </profile>
+
+                <profile id="PropertyFileAndLogFile" enable="false">
+                    <description>Export property and log Files</description>
+                    <task ref="configurationFile"/>
+                    <task ref="loggingFile"/>
+
+                    <transport>mail</transport>
+                </profile>
+            </profiles>
+
+            <taskDef id="configurationFile" type="propertyTask">
+                <param name="propertyFileName" value="vcm.properties"/>
+                <param name="propertyFilePath" value="etc/"/>
+            </taskDef>
+
+            <taskDef id="loggingFile" type="logTask">
+                <param name="logFileName" value="vcm.log"/>
+                <param name="logFilePath" value="log/"/>
+            </taskDef>
+
+        </component>
+    </components>
+</trailsDefinition>

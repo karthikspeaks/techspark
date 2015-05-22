@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd" default-autowire="byName">
+
+    <context:annotation-config/>
+    <context:component-scan base-package="com.cisco"/>
+
+    <bean id="mailTransportHandler" class="com.cisco.trails.engine.transport.MailTransport"/>
+
+    <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+        <property name="host" value="xchcasha.cisco.com"/>
+        <property name="port" value="25"/>
+        <!--property name="username" value="${email.account.name}"/>
+        <property name="password" value="${email.account.password}"/-->
+        <property name="javaMailProperties">
+            <props>
+                <prop key="mail.smtp.starttls.enable">false</prop>
+                <prop key="mail.smtp.auth">false</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>

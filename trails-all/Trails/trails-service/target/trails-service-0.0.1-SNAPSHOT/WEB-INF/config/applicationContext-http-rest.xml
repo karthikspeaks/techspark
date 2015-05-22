@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/integration
+		http://www.springframework.org/schema/integration/spring-integration.xsd
+
+        http://www.springframework.org/schema/oxm
+        http://www.springframework.org/schema/oxm/spring-oxm-3.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd"
+       xmlns:int="http://www.springframework.org/schema/integration"
+       xmlns:oxm="http://www.springframework.org/schema/oxm"
+
+        >
+
+    <int:annotation-config/>
+
+    <context:component-scan base-package="com.cisco"/>
+
+    <!-- To enable @RequestMapping process on type level and method level -->
+    <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"/>
+    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+        <property name="messageConverters">
+            <list>
+                <ref bean="marshallingConverter"/>
+                <ref bean="jsonConverter"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="marshallingConverter" class="org.springframework.http.converter.xml.MarshallingHttpMessageConverter">
+        <constructor-arg ref="marshaller"/>
+        <property name="supportedMediaTypes" value="application/xml"/>
+    </bean>
+
+    <bean id="jsonConverter" class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+        <property name="supportedMediaTypes" value="application/json"/>
+    </bean>
+
+    <!-- handler mapping implementation that is aware of inbound Spring Integration
+            http inbound gateway's and inbound adapter's with "path" attributes -->
+    <bean class="org.springframework.integration.http.inbound.IntegrationRequestMappingHandlerMapping"/>
+
+    <!-- Inbound/Outbound Channels -->
+    <!--int:channel id="trailsRequestChannel"/>
+    <int:channel id="trailsResponseChannel"/>
+
+    <int-http:inbound-gateway id="inboundTrailsRequestGateway"
+                              supported-methods="GET , POST"
+                              request-channel="trailsRequestChannel"
+                              reply-channel="trailsResponseChannel"
+                              mapped-response-headers="Return-Status, Return-Status-Msg, HTTP_RESPONSE_HEADERS"
+                              view-name="/trails"
+                              path="/trails-rest/components/{name}"
+                              reply-timeout="50000">
+
+        <int-http:header name="componentName" expression="#pathVariables.name"/>
+
+    </int-http:inbound-gateway-->
+
+    <!-- Note: The default parameter name for favorParameter is 'format'. For instance, when this flag is true, a request for /services/employee/{id}/search?format=json will result
+            in an MappingJacksonJsonView being resolved, while the Accept header can be the browser-defined text/html,application/xhtml+xml  -->
+
+    <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+        <property name="order" value="1"/>
+        <property name="defaultContentType" value="application/xml"/>
+        <property name="favorParameter" value="true"/>
+        <property name="ignoreAcceptHeader" value="true"/>
+        <property name="mediaTypes">
+            <map>
+                <entry key="json" value="application/json"/>
+                <entry key="xml" value="application/xml"/>
+            </map>
+        </property>
+        <property name="defaultViews">
+            <list>
+                <bean
+                        class="com.cisco.trails.rest.json.view.ExtendedMappingJacksonJsonView">
+                    <property name="objectMapper" ref="jaxbJacksonObjectMapper"/>
+                </bean>
+                <bean class="org.springframework.web.servlet.view.xml.MarshallingView">
+                    <constructor-arg ref="marshaller"/>
+                </bean>
+            </list>
+        </property>
+    </bean>
+
+    <oxm:jaxb2-marshaller id="marshaller" contextPath="com.cisco.trails.model.request"/>
+
+    <bean id="workflowChannelGateway" class="com.cisco.trails.rest.WorkflowChannelGateway"/>
+
+    <!--int:service-activator id="trailsRestServiceActivator"
+                           input-channel="trailsRequestChannel"
+                           output-channel="trailsResponseChannel"
+                           ref="trailsRestService"
+                           method="listComponents"
+                           requires-reply="true"
+                           send-timeout="60000"/-->
+
+    <bean id="jaxbJacksonObjectMapper" class="com.cisco.trails.rest.json.JaxbJacksonObjectMapper"/>
+
+</beans>

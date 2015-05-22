@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:spi="http://www.springframework.org/schema/integration"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:task="http://www.springframework.org/schema/task"
+       xmlns:oxm="http://www.springframework.org/schema/oxm"
+       xmlns:util="http://www.springframework.org/schema/util"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/integration
+	    http://www.springframework.org/schema/integration/spring-integration.xsd
+	    http://www.springframework.org/schema/task
+	    http://www.springframework.org/schema/task/spring-task.xsd
+	    http://www.springframework.org/schema/oxm
+        http://www.springframework.org/schema/oxm/spring-oxm-3.0.xsd
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util.xsd"
+       default-autowire="byName">
+
+    <context:property-placeholder location="classpath:trails.properties"/>
+    <util:properties id="trailsProperties"
+                     location="classpath:trails.properties"/>
+
+    <import resource="mailApplicationContext.xml"/>
+    <import resource="ftpContext.xml"/>
+    <import resource="channelContext.xml"/>
+
+    <context:annotation-config/>
+    <context:component-scan base-package="com.cisco"/>
+
+    <spi:service-activator input-channel="serviceRequestInChannel" method="process"
+                           output-channel="serviceRequestOutChannel" ref="inbrequestgateway"/>
+
+    <spi:service-activator ref="profileExecutor" input-channel="serviceRequestOutChannel" method="executeProfile"
+                           output-channel="profileTaskSplitChannel"/>
+
+    <spi:splitter input-channel="profileTaskSplitChannel" ref="profileTaskSplitter"
+                  output-channel="profileTaskRouterChannel" method="split">
+    </spi:splitter>
+
+
+    <spi:header-value-router input-channel="profileTaskRouterChannel" header-name="taskType" id="taskRouter"
+                             default-output-channel="routerOutPropTaskChannel">
+        <spi:mapping value="propertyTask" channel="routerOutPropTaskChannel"/>
+        <spi:mapping value="logTask" channel="routerOutLogTaskChannel"/>
+        <spi:mapping value="envTask" channel="routerOutEnvTaskChannel"/>
+    </spi:header-value-router>
+
+    <spi:service-activator input-channel="routerOutPropTaskChannel"
+                           method="execute" output-channel="taskCompleteChannel" ref="taskPropertyHandler">
+        <spi:poller max-messages-per-poll="1"
+                    receive-timeout="30000" task-executor="taskHandlerExecutor" fixed-delay="10"/>
+    </spi:service-activator>
+
+    <spi:service-activator input-channel="routerOutLogTaskChannel"
+                           method="execute" output-channel="taskCompleteChannel" ref="taskLogHandler">
+        <spi:poller max-messages-per-poll="1"
+                    receive-timeout="30000" task-executor="taskHandlerExecutor" fixed-delay="10"/>
+    </spi:service-activator>
+
+    <spi:service-activator input-channel="routerOutEnvTaskChannel"
+                           method="execute" output-channel="taskCompleteChannel" ref="taskEnvHandler">
+        <spi:poller max-messages-per-poll="1"
+                    receive-timeout="30000" task-executor="taskHandlerExecutor" fixed-delay="10"/>
+    </spi:service-activator>
+
+    <spi:publish-subscribe-channel id="taskCompleteChannel"/>
+    <spi:aggregator input-channel="taskCompleteChannel" method="aggregate"
+                    ref="profileTaskAggregator" output-channel="zipperInChannel"
+                    message-store="profileTaskMessageStore"
+                    send-partial-result-on-expiry="true">
+    </spi:aggregator>
+
+    <spi:service-activator input-channel="zipperInChannel" method="createArchive"
+                           output-channel="routerInTransportChannel" ref="zipper"/>
+
+    <spi:header-value-router input-channel="routerInTransportChannel" header-name="transport" id="transportRouter"
+                             default-output-channel="routerOutMailTransportChannel">
+        <spi:mapping value="mail" channel="routerOutMailTransportChannel"/>
+        <spi:mapping value="ftp" channel="routerOutFtpTransportChannel"/>
+    </spi:header-value-router>
+
+    <spi:service-activator input-channel="routerOutMailTransportChannel"
+                           method="send" ref="mailTransportHandler">
+        <spi:poller max-messages-per-poll="1"
+                    receive-timeout="30000" task-executor="transportHandlerExecutor" fixed-delay="10"/>
+    </spi:service-activator>
+
+    <spi:service-activator input-channel="routerOutFtpTransportChannel"
+                           method="send" ref="ftpTransportHandler" output-channel="ftpChannel">
+        <spi:poller max-messages-per-poll="1"
+                    receive-timeout="30000" task-executor="transportHandlerExecutor" fixed-delay="10"/>
+    </spi:service-activator>
+
+    <bean id="zipper" class="com.cisco.trails.engine.ArtifactZipper"/>
+
+    <bean id="profileTaskMessageStore" class="org.springframework.integration.store.SimpleMessageStore"/>
+
+    <bean id="profileTaskMessageStoreReaper" class="org.springframework.integration.store.MessageGroupStoreReaper">
+        <property name="messageGroupStore" ref="profileTaskMessageStore"/>
+        <property name="timeout" value="2000"/>
+    </bean>
+
+    <task:scheduled-tasks>
+        <task:scheduled ref="profileTaskMessageStoreReaper" method="run" fixed-rate="1000"/>
+    </task:scheduled-tasks>
+
+    <task:executor id="taskHandlerExecutor" pool-size="2" queue-capacity="5" rejection-policy="CALLER_RUNS"/>
+
+    <task:executor id="transportHandlerExecutor" pool-size="2" queue-capacity="5" rejection-policy="CALLER_RUNS"/>
+
+    <bean id="profileTaskAggregator" class="com.cisco.trails.engine.aggregator.ProfileTaskAggregator"/>
+
+    <bean id="taskPropertyHandler" class="com.cisco.trails.engine.taskhandlers.PropertyTaskHandler"/>
+
+    <bean id="taskLogHandler" class="com.cisco.trails.engine.taskhandlers.LogTaskHandler"/>
+
+    <bean id="taskEnvHandler" class="com.cisco.trails.engine.taskhandlers.EnvTaskHandler"/>
+
+    <bean id="profileExecutor" class="com.cisco.trails.engine.ProfileExecutor"/>
+
+    <bean id="requestValidator" class="com.cisco.trails.validator.RequestValidator"/>
+
+    <bean id="componentValidator" class="com.cisco.trails.validator.ComponentValidator"/>
+
+    <bean id="inbrequestgateway" class="com.cisco.trails.engine.gateway.InboundRequestGateway"/>
+
+    <bean class="com.cisco.trails.engine.splitter.ProfileTaskSplitter" id="profileTaskSplitter"/>
+
+    <bean class="com.cisco.trails.cache.CacheManager" id="cacheMgr"/>
+
+    <oxm:jaxb2-marshaller id="componentMarshaller" contextPath="com.cisco.trails.model"/>
+
+    <bean id="engine" class="com.cisco.trails.engine.TrailsEngine" init-method="startup"/>
+
+</beans>

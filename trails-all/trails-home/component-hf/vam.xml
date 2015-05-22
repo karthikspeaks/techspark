@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trailsDefinition>
+    <components>
+        <component>
+            <componentName>vam</componentName>
+            <baseDirectory>E:/Sample/vam/</baseDirectory>
+            <email>kamohan2@cisco.com</email>
+
+            <profiles>
+                <profile id="PropertyFilesOnly">
+                    <description>Export property Files</description>
+                    <task ref="configurationFile"/>
+					<task ref="configurationFile2"/>
+
+                    <transport>ftp</transport>
+
+                </profile>
+
+                <profile id="LogFilesOnly">
+                    <description>Export log Files</description>
+                    <task ref="loggingFile"/>
+
+                    <transport>ftp</transport>
+                </profile>
+
+                <profile id="PropertyFileAndLogFile" enable="false">
+                    <description>Export property and log Files</description>
+                    <task ref="configurationFile"/>
+                    <task ref="loggingFile"/>
+
+                    <transport>ftp</transport>
+                </profile>
+            </profiles>
+
+            <taskDef id="configurationFile" type="propertyTask">
+			<description>Export prop Files</description>
+                <param name="propertyFileName" value="vam.properties"/>
+                <param name="propertyFilePath" value="etc/"/>
+            </taskDef>
+			
+			<taskDef id="configurationFile2" type="propertyTask">
+			<description>Export prop Files</description>
+                <param name="propertyFileName" value="config.properties"/>
+                <param name="propertyFilePath" value="etc/"/>
+            </taskDef>
+
+            <taskDef id="loggingFile" type="logTask">
+				<description>Export log Files</description>
+                <param name="logFileName" value="vam.log"/>
+                <param name="logFilePath" value="log/"/>
+            </taskDef>
+
+        </component>
+    </components>
+</trailsDefinition>

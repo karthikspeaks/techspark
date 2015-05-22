@@ -1,0 +1,139 @@
+Scope 1:
+Library to pick crucial data
+	- process stats for the component
+	- JVM stats
+	- memory stats
+	
+XML definition of profiles
+Properties extract
+Log file extract (current, days , full)
+Known mounts, Email
+zip - protect
+Same machine 
+One Component
+
+Engine
+
+JVMTask - Implements process , Memory stats
+PropertyExportTask - Pick property values , Sofwtare version
+DBInfoTask - DB version, data installer version, Patch level, DBMS logs etc
+LogExportTask (how many days)- Pick log data
+TableExportTask (Custom query) - embedded by dev when creating profile, pass in from UI
+DBDumpTask - Dump DB info
+EnvVarTask - Pick deployment Server info
+
+Invoke tasks as per profile (always have generic tasks)
+	
+trails-service - rest
+	REST Server
+		-	getProfiles?componentId=vcm
+		- 	submitRequest(vcm, profileId,string[]) - to JMS
+
+	Scheduler
+		- generate context and call engine entity	
+	
+trails-web - UI
+
+trails-engine 
+	Task handlers
+		
+Property File
+**************
+
+baseDir
+transport
+	-	smtp host / smtp port
+	-	FTP details
+	- 	shared file system
+	
+Profile XML
+	- Component Name
+	- baseDir (override)
+	- Properties Path
+	- log path
+	- enable / disable on each (default enable)
+	- transport per task.
+
+Tech stack
+XStream
+Spring
+Stats API
+Tar API
+Java mail API
+DP - template	
+
+
+Parallel UI dev
+
+Scope 2:
+Parameterized tasks
+FTP support
+Public cryptography
+Redundancy
+Two / more Components
+Log file extract (current, days , full)
+
+Scope 3
+Scheduling of profiles
+Plugin demo
+
+
+CISCO TRAILS – TRoubleshooting AnalysIs and Log Syndication
+
+Start with VCM Server /VCM UI
+
+Setup:
+Appropriate mounts available to stuff
+Software definition
+generic XML that will be defined for the project (custom queries)
+
+Provides framework
+-	Each component defines it params in the generic XML
+-	Make reports from profile
+-	Make reports on given queries
+
+Provides UI Control
+-	Prepare report
+-	Decipher report
+o	Asks password Or
+o	Tries  to use the configured certificate
+-	Upload certificate per application (for Public Crypt)
+
+Report  Default
+	Environment variables
+Software Version
+Deployment server info
+	Database Version / patch level
+
+Take DB dumps
+Give a spreadsheet report of selected table Data.
+Take logs (possibly by filter)
+Take System Java memory statistics
+
+Profiles :
+Item 1 : Give me all logs
+Item 2 : Give me specific logs
+
+Profile 1 : Item1 + Item2
+Profile 2 : Item1 + item4
+
+Profiles can have parameters that need to be submitted.
+
+Prepare reports based on chosen profile and zip it. 
+
+Options to user :
+
+Possibly encrypted zip to avoid data theft on transmission – password set by preparer
+	Or
+We can also try public cryptography support – encrypt with Cisco Tool public key (only can be decrypted within)
+
+
+Scheduled / automated reports should be supported (examples - > send log of JVM to check leaks, Stats of how a certain table is filling up)
+Support Email functionality
+Support for Drop on accessible storage
+Support for FTP
+
+Notes:
+This tool can be used for QC labs, Integration labs, Production labs
+One tool can work with any number of onsite software’s
+May use puppet like infrastructure underneath

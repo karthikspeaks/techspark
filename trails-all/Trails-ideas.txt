@@ -1,0 +1,174 @@
+/trails-service/trails-rest/submit/workflow/execute-profile
+/trails-service/trails-rest/components
+/trails-service/trails-rest/components/VAM
+
+enhance env task - http://www.thegeekstuff.com/2010/11/50-linux-commands/
+maintain zip dir structure
+
+Node stat
+Global trails.rpm.orgprefix=nds_
+	- env
+	- installed rpms
+
+management service
+	- validatin failure service.
+	- post trails definition - update cache and write XML to components-dir
+	- refresh
+
+Return general response XML.
+code cleanup
+make async channel.
+Catching exception...
+Concat componensts from UI and generate one report
+How to capture the audit trail logs for the rest service to respond the details.
+Think about gateway throttling...
+Transport implementation - ftp , file
+UI Implementation
+Installer implementation.
+Dynamic update of task,transport
+Clean up from the invocation folder onwards after few days - Think
+
+ComponentRequest ()*/componentName
+service/components - all components - Just String list
+
+service/components/{?} - specific component
+
+service/{VAM}/profiles - all profiles of VAM Component
+
+service/{VAM}/{?} - Specific profile under VAM component
+service/{VAM}/{SomeFiles}/tasks - All Tasks of VAM component for profile "SomeFiles"
+
+service/{VAM}/{SomeFiles}/{?} - specific Task of VAM component for profile "SomeFiles"
+
+POST trails-rest/submit/workflow/execute-profile
+
+GET trails-rest/query/workflow/{invocationId}
+
+Only enabled will come..
+
+**************************************
+
+Different machines
+Grouping components under one invocation
+	* Master slave
+	* Components split out
+	* multiple instance of same component.
+Automated profile execution via component definition (by time)
+New Task implementations - DB Task, Log file rolling
+
+DB Task
+
+connection
+
+SSL Support
+Profile approval workflow
+
+<?xml version="1.0" encoding="UTF-8"?>
+<trailsDefinition>
+    <components>
+        <component>
+            <componentName>merchandiser</componentName>
+            <baseDirectory>E:/Sample/vcm/</baseDirectory>
+            <email>kamohan2@cisco.com</email>
+
+            <profiles>
+                <profile id="PropertyFilesOnly">
+                    <description>Export property Files</description>
+                    <task ref="configurationFile"/>
+					<task ref="envFile"/>
+					
+                    <transport>mail</transport>
+                </profile>
+
+                <profile id="LogFilesOnly">
+                    <description>Export log Files</description>
+                    <task ref="loggingFile"/>
+
+                    <transport>mail</transport>
+                </profile>
+
+                <profile id="PropertyFileAndLogFile" enable="false">
+                    <description>Export property and log Files</description>
+                    <task ref="configurationFile"/>
+                    <task ref="loggingFile"/>
+
+                    <transport>mail</transport>
+                </profile>
+            </profiles>
+
+            <taskDef id="configurationFile" type="propertyTask">
+				<description>Export prop Files</description>
+                <param name="propertyFileName" value="vcm.properties"/>
+                <param name="propertyFilePath" value="etc/"/>
+            </taskDef>
+
+            <taskDef id="loggingFile" type="logTask">
+				<description>Export log Files</description>
+                <param name="logFileName" value="vcm.log"/>
+                <param name="logFilePath" value="log/"/>
+            </taskDef>
+			
+			<taskDef id="envFile" type="envTask" >
+				<description>Export property and log Files</description>
+			</taskDef>
+			
+			<taskDef id="exportClassificationTables" type="dbTask">
+				<description>Export classification table info</description>
+                
+				<query conRef="vamDB" id="" >
+					
+					<stmt>
+						SELECT * from asset where title={title} and asset_id = {id}	
+					</stmt>
+					<param name="title" value="" required="true" />
+					<param name="id" value=""   required="true"/>
+					
+				</query>
+				
+				<query conRef="ssrDB" id="">
+					
+					<stmt>
+						SELECT * from ssr where condition1 ={pa1} and condition2 = {pa2}	
+					</stmt>	
+					<param name="pa1" value="" required="true"/>
+					<param name="pa2" value="" required="true"/>
+				</query>
+				
+				<param name="fileName" value="classification.xls" />
+                <param name="filePath" value="dbexport/"/>
+            </taskDef>
+
+			<connectionDef id="vamDB" type="database" >
+				<description>VAM DB connection</description>
+				<url></url>
+				<user></user>
+				<!--Password will be encrypted !-->
+				<password></password>
+				<driver></driver> <!-- !-->
+			</connectionDef>
+			
+			<connectionDef id="ssrDB" type="database" >
+				<description>SSR DB connection</description>
+				<url></url>
+				<user></user>
+				<!--Password will be encrypted !-->
+				<password></password>
+				<driver></driver>
+			</connectionDef>
+			
+	    </component>
+    </components>
+</trailsDefinition>
+
+required = true, false
+
+param usage=
+user passed - required true
+provided not change - required false
+provided may change - required optional
+
+*****************************************
+
+
+
+

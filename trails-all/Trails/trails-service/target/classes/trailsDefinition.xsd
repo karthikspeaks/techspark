@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+
+    <xs:element name="trailsDefinition">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="components" minOccurs="1" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="components">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="component" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="email">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[^@]+@[^\.]+\..+"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="component">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="componentName" type="xs:string"/>
+                <xs:element name="baseDirectory" type="xs:string"/>
+                <xs:element name="email" type="email"/>
+
+                <xs:element ref="profiles" minOccurs="1" maxOccurs="1"/>
+                <xs:element ref="taskDef" minOccurs="1" maxOccurs="unbounded"/>
+
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="profiles">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="profile" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="transport">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="mail"/>
+            <xs:enumeration value="ftp"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:element name="profile">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="description" type="xs:string" minOccurs="0" nillable="true"/>
+                <xs:element ref="task" maxOccurs="unbounded"/>
+                <xs:element name="transport" type="transport"/>
+
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string"/>
+            <xs:attribute name="enable" type="xs:boolean"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="task">
+        <xs:complexType>
+            <xs:attribute name="ref" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="taskTypes">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="envTask"/>
+            <xs:enumeration value="propertyTask"/>
+            <xs:enumeration value="logTask"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:element name="taskDef">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="description" minOccurs="0" nillable="true"/>
+                <xs:element ref="param" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string"/>
+            <xs:attribute name="type" type="taskTypes"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="param">
+        <xs:complexType>
+            <xs:attribute name="name" type="xs:string"/>
+            <xs:attribute name="value" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

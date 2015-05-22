@@ -1,0 +1,31 @@
+<webapp-structure>
+  <registeredFiles>
+    <entry>
+      <string>currentBuild</string>
+      <path-set>
+        <pathsSet class="linked-hash-set">
+          <string>index.html</string>
+          <string>WEB-INF/web.xml</string>
+          <string>WEB-INF/classes/applicationContext-web.xml</string>
+          <string>WEB-INF/classes/log4j.properties</string>
+          <string>WEB-INF/classes/trailsweb.properties</string>
+          <string>WEB-INF/lib/trails-model-0.0.1-SNAPSHOT.jar</string>
+        </pathsSet>
+      </path-set>
+    </entry>
+  </registeredFiles>
+  <dependenciesInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>com.cisco</groupId>
+        <artifactId>trails-model</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <type>jar</type>
+        <scope>compile</scope>
+        <exclusions/>
+        <optional>false</optional>
+      </dependency>
+      <targetFileName>trails-model-0.0.1-SNAPSHOT.jar</targetFileName>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+  </dependenciesInfo>
+</webapp-structure>

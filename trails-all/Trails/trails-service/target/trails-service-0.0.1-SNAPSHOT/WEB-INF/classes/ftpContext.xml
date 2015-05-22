@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:spi="http://www.springframework.org/schema/integration"
+       xmlns:spi-ftp="http://www.springframework.org/schema/integration/ftp"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+
+
+        http://www.springframework.org/schema/integration
+	    http://www.springframework.org/schema/integration/spring-integration.xsd
+	    http://www.springframework.org/schema/integration/ftp
+	    http://www.springframework.org/schema/integration/ftp/spring-integration-ftp-3.0.xsd" default-autowire="byName">
+
+    <bean id="ftpClientFactory" class="org.springframework.integration.ftp.session.DefaultFtpSessionFactory">
+        <property name="host" value="${trails.ftp.host}"/>
+        <property name="port" value="${trails.ftp.port}"/>
+        <property name="username" value="${trails.ftp.user}"/>
+        <property name="password" value="${trails.ftp.pwd}"/>
+    </bean>
+
+    <spi:channel id="ftpChannel"/>
+
+    <bean id="ftpTransportHandler" class="com.cisco.trails.engine.transport.FTPTransport"/>
+
+    <spi-ftp:outbound-channel-adapter id="ftpOutbound"
+                                      channel="ftpChannel"
+                                      remote-directory="${trails.ftp.folder}"
+                                      session-factory="ftpClientFactory"/>
+
+
+</beans>

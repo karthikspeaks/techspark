@@ -1,0 +1,190 @@
+<trails>
+    <components>
+        <component>
+            <componentName>vam</componentName>
+            <supportMail>kamohan2@cisco.com</supportMail>
+            <profileList>
+                <profile id="PropertyFilesOnly">
+                    <description>Export property Files</description>
+                    <transport>mail</transport>
+                    <taskList>
+                        <task id="configurationFile2" type="propertyTask">
+                            <description>Export prop Files</description>
+                            <taskInputParams>
+                                <taskParams>
+                                    <name>propertyFileName</name>
+                                    <required>true</required>
+                                    <value>config.properties</value>
+                                </taskParams>
+                                <taskParams>
+                                    <name>propertyFilePath</name>
+                                    <required>true</required>
+                                    <value>etc/</value>
+                                </taskParams>
+                            </taskInputParams>
+                        </task>
+                        <task id="configurationFile" type="propertyTask">
+                            <description>Export prop Files</description>
+                            <taskInputParams>
+                                <taskParams>
+                                    <name>propertyFileName</name>
+                                    <required>true</required>
+                                    <value>vam.properties</value>
+                                </taskParams>
+                                <taskParams>
+                                    <name>propertyFilePath</name>
+                                    <required>true</required>
+                                    <value>etc/</value>
+                                </taskParams>
+                            </taskInputParams>
+                        </task>
+                    </taskList>
+                </profile>
+                <profile id="LogFilesOnly">
+                    <description>Export log Files</description>
+                    <transport>mail</transport>
+                    <taskList>
+                        <task id="loggingFile" type="logTask">
+                            <description>Export log Files</description>
+                            <taskInputParams>
+                                <taskParams>
+                                    <name>logFileName</name>
+                                    <required>true</required>
+                                    <value>vam.log</value>
+                                </taskParams>
+                                <taskParams>
+                                    <name>logFilePath</name>
+                                    <required>true</required>
+                                    <value>log/</value>
+                                </taskParams>
+                            </taskInputParams>
+                        </task>
+                    </taskList>
+                </profile>
+                <profile id="PropertyFileAndLogFile">
+                    <description>Export property and log Files</description>
+                    <transport>mail</transport>
+                    <taskList>
+                        <task id="loggingFile" type="logTask">
+                            <description>Export log Files</description>
+                            <taskInputParams>
+                                <taskParams>
+                                    <name>logFileName</name>
+                                    <required>true</required>
+                                    <value>vam.log</value>
+                                </taskParams>
+                                <taskParams>
+                                    <name>logFilePath</name>
+                                    <required>true</required>
+                                    <value>log/</value>
+                                </taskParams>
+                            </taskInputParams>
+                        </task>
+                        <task id="configurationFile" type="propertyTask">
+                            <description>Export prop Files</description>
+                            <taskInputParams>
+                                <taskParams>
+                                    <name>propertyFileName</name>
+                                    <required>true</required>
+                                    <value>vam.properties</value>
+                                </taskParams>
+                                <taskParams>
+                                    <name>propertyFilePath</name>
+                                    <required>true</required>
+                                    <value>etc/</value>
+                                </taskParams>
+                            </taskInputParams>
+                        </task>
+                    </taskList>
+                </profile>
+            </profileList>
+        </component>
+        <component>
+            <componentName>merchandiser</componentName>
+            <supportMail>kamohan2@cisco.com</supportMail>
+            <profileList>
+                <profile id="PropertyFilesOnly">
+                    <description>Export property Files</description>
+                    <transport>mail</transport>
+                    <taskList>
+                        <task id="envFile" type="envTask1">
+                            <description>Export property and log Files</description>
+                        </task>
+                        <task id="configurationFile" type="propertyTask">
+                            <description>Export prop Files</description>
+                            <taskInputParams>
+                                <taskParams>
+                                    <name>propertyFileName</name>
+                                    <required>true</required>
+                                    <value>vcm.properties</value>
+                                </taskParams>
+                                <taskParams>
+                                    <name>propertyFilePath</name>
+                                    <required>true</required>
+                                    <value>etc/</value>
+                                </taskParams>
+                            </taskInputParams>
+                        </task>
+                    </taskList>
+                </profile>
+                <profile id="LogFilesOnly">
+                    <description>Export log Files</description>
+                    <transport>mail</transport>
+                    <taskList>
+                        <task id="loggingFile" type="logTask">
+                            <description>Export log Files</description>
+                            <taskInputParams>
+                                <taskParams>
+                                    <name>logFileName</name>
+                                    <required>true</required>
+                                    <value>vcm.log</value>
+                                </taskParams>
+                                <taskParams>
+                                    <name>logFilePath</name>
+                                    <required>true</required>
+                                    <value>log/</value>
+                                </taskParams>
+                            </taskInputParams>
+                        </task>
+                    </taskList>
+                </profile>
+                <profile id="PropertyFileAndLogFile">
+                    <description>Export property and log Files</description>
+                    <transport>mail</transport>
+                    <taskList>
+                        <task id="loggingFile" type="logTask">
+                            <description>Export log Files</description>
+                            <taskInputParams>
+                                <taskParams>
+                                    <name>logFileName</name>
+                                    <required>true</required>
+                                    <value>vcm.log</value>
+                                </taskParams>
+                                <taskParams>
+                                    <name>logFilePath</name>
+                                    <required>true</required>
+                                    <value>log/</value>
+                                </taskParams>
+                            </taskInputParams>
+                        </task>
+                        <task id="configurationFile" type="propertyTask">
+                            <description>Export prop Files</description>
+                            <taskInputParams>
+                                <taskParams>
+                                    <name>propertyFileName</name>
+                                    <required>true</required>
+                                    <value>vcm.properties</value>
+                                </taskParams>
+                                <taskParams>
+                                    <name>propertyFilePath</name>
+                                    <required>true</required>
+                                    <value>etc/</value>
+                                </taskParams>
+                            </taskInputParams>
+                        </task>
+                    </taskList>
+                </profile>
+            </profileList>
+        </component>
+    </components>
+</trails>

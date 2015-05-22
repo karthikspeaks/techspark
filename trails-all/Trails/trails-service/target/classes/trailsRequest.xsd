@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+
+    <xs:element name="trails">
+        <xs:complexType>
+            <xs:all>
+                <xs:element ref="components" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="executeProfileRequest" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="executeProfileResponse" minOccurs="0" maxOccurs="1"/>
+
+                <xs:element ref="errors" minOccurs="0" maxOccurs="1"/>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="errors">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="error" minOccurs="1" maxOccurs="unbounded"/>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="error">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="code"/>
+                <xs:element name="message"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="executeProfileRequest">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="componentName" type="xs:string"/>
+                <xs:element name="profile" type="xs:string"/>
+                <xs:element name="hint" type="xs:string"/>
+                <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="safeWord" type="xs:string" minOccurs="0" maxOccurs="1"/>
+
+                <xs:element name="taskInputParams" minOccurs="0" maxOccurs="1"/>
+
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="executeProfileResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="invocationId" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="components">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="component" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="email">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[^@]+@[^\.]+\..+"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="component">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="componentName" type="xs:string"/>
+                <xs:element name="supportMail" type="email"/>
+
+                <xs:element ref="profileList" minOccurs="1" maxOccurs="1"/>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="profileList">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="profile" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="transport">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="mail"/>
+            <xs:enumeration value="ftp"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:element name="profile">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="transport" type="transport"/>
+                <xs:element ref="taskList"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="taskList">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="task" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="task">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="description" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="taskInputParams" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string"/>
+            <xs:attribute name="type" type="taskTypes"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="taskInputParams">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="taskParams" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:simpleType name="taskTypes">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="envTask"/>
+            <xs:enumeration value="propertyTask"/>
+            <xs:enumeration value="logTask"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:element name="taskParams">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string"/>
+                <xs:element name="required" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="value" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="taskId" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

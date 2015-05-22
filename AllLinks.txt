@@ -2,11 +2,34 @@ R981037
 
  2 = x - 0.3x
 
+to read
+
+9222299032
+
+prasoon 8105884504
+
+http://www.slideshare.net/ewolff/10-typical-problems-in-enterprise-java-applications
+http://java.dzone.com/articles/top-10-causes-java-ee
+
+********
+
+Programs
+http://www.java2novice.com/java-file-io-operations/
+
+REST Standard
+http://www.ibm.com/developerworks/webservices/library/ws-restful/
+
+one to many
+http://code.tutsplus.com/articles/sql-for-beginners-part-3-database-relationships--net-8561
+
 HTTP / protocols
 
 afp://10.142.220.202
 
 http://en.wikipedia.org/wiki/List_of_network_protocols_%28OSI_model%29
+
+TDD
+http://technologyconversations.com/2013/12/20/test-driven-development-tdd-example-walkthrough/
 
 Comparison of JMS providers
 http://predic8.com/activemq-hornetq-rabbitmq-apollo-qpid-comparison.htm
@@ -360,6 +383,7 @@ http://codesolid.com/spring-unit-testing-using-junit/
 
 **
 Optimistic vs pessimistic locking
+http://www.orafaq.com/papers/locking.pdf
 http://blog.couchbase.com/optimistic-or-pessimistic-locking-which-one-should-you-pick
 
 Hibernate versioning
@@ -590,6 +614,8 @@ D991B3563653
 Architects intervew tips 
 http://www.lifeofanarchitect.com/winning-interview-techniques-for-architects/
 
+Future
+http://java.dzone.com/articles/javautilconcurrentfuture
 
 Scalabilty - availabilty
 http://www.fromdev.com/2013/07/architect-interview-questions-and-answers.html
@@ -771,7 +797,6 @@ java enumerations
 http://docs.oracle.com/javase/tutorial/java/javaOO/enum.html
 
 JCA 
-
 Connnector 1.5
 
 Hibernate Interview questions
@@ -958,6 +983,9 @@ git commit -m "type your commit message here"
 git push origin master
 
 
+ESB Intro
+http://tutorials.jenkov.com/soa/service-proxy.html
+
 why jax ws better than rpc
 http://web.archive.org/web/20060813120808/http://java.sun.com/developer/technicalArticles/WebServices/high_performance/
 
@@ -994,8 +1022,6 @@ ACID Vs BASE
 http://databases.about.com/od/otherdatabases/a/Abandoning-Acid-In-Favor-Of-Base.htm
 JS in RIA
 http://blog.stevensanderson.com/2012/08/01/rich-javascript-applications-the-seven-frameworks-throne-of-js-2012/
-REST Standard
-http://www.ibm.com/developerworks/webservices/library/ws-restful/
 
 FTP Vs SFTP vs FTPS
 http://www.jscape.com/blog/bid/75602/Understanding-Key-Differences-Between-FTP-FTPS-and-SFTP
@@ -1275,20 +1301,17 @@ Add value both in Domain and Technically
 Proven team leader
 
 wht position will this be for ?..whom do i report into ?
-What are learning / certification channels at Ness ?
-Under the EDC model what happens to employees when the EDC contract is cancelled ?
-What facilities does Ness provide - like flexi timing, free lunch, work from home etc
+What are learning / certification channels  ?
+What facilities provide - like flexi timing, free lunch, work from home etc
 Does company provide corporate phone or internet facilities ?
-Does ness include pf in ctc ?
-Whats the typical raise or bonus at Ness ? yearly, semi ?
+Do include pf in ctc ?
+Whats the typical raise or bonus ? yearly, semi ?
 
 What will be the next steps ?
 
-I need 45 days to join...my bonus letter is due within 15 days
-
 is there a signing bonus involved?
 
-
+***************************SOFT SKILLS**************************************
 
 behavioral interview, kids:
 
@@ -1308,16 +1331,20 @@ behavioral interview, kids:
 
 5. Stay classy.  Never bash people in your stories.  Talk about challenges when you're setting up the situation, but don't bash bosses, co-workers or customers.  Just talk about how you worked through the challenges.
 
-6. Once you have your six stories down cold, research the dimensions/areas usually probed by interviewers in a behavioral interview.  Create a grid for the stories that you think best matches the dimensions you'll see.  Teamwork, Communication, Drive, Leadership, Project Management, etc.  What you'll find is that even though you've only prepared six stories, you've got at least two stories to tell for each dimension.
+6. Once you have your six stories down cold, research the dimensions/areas usually probed by interviewers in a behavioral interview.  Create a grid for the stories that you think best matches the dimensions you'll see.  
+Teamwork, Communication, Drive, Leadership, Project Management, etc. 
+ What you'll find is that even though you've only prepared six stories, you've got at least two stories to tell for each dimension.
 
 7. Go to the interview, stay loose and tell the story, then dig into the details if the interviewing wants to dive it.
 
 That's it.  I swear.  Tell a good story and keep your story list short, but the details strong and vivid.
 
-
-
 http://www.artofmanliness.com/2010/07/02/how-prepare-for-and-rock-a-behavioral-job-interview/
+http://biginterview.com/blog/2014/01/leadership-interview-questions.html
 
+***************************SOFT SKILLS**************************************
+
+***************************COMMON PROGRAMS**********************************
 
 Binary Search
 
@@ -1348,7 +1375,6 @@ class BSearchDemo
 }
 
 http://www.java2novice.com/java-sorting-algorithms/quick-sort/
-
 
 Bubble sort
 
@@ -1457,4 +1483,173 @@ public static void InsertionSort( int [ ] num)
         num[ i+1 ] = key;    // Put the key in its proper location
      }
 }
+
+suddep 1st floor 13.4 4th may morning
+
+13K Subham
+
+
+***************************SOFT SKILLS Implementation**************************************
+
+http://www.right.com/wps/wcm/connect/right-us-en/home/thoughtwire/categories/career-work/answers-to-7-tough-interview-questions
+
+2-3 min stories
+
+Dimensions 
+
+Teamwork, Communication, Drive, Leadership, Project Management, Dynamic , 
+
+Tough situation
+
+Story 1  - Difficult management, Teamwork, Teamplayer, Conflict management
+
+http://www.mindtools.com/pages/article/newTMM_79.htm
+
+	Situation : Difficult team member, demotivated team
+	
+	What i did : try to understand , talk to managers to get suggestion
+
+
+Story 2 : Leadership 
+
+	Ability to inspire, Keep up confidence and maintain team morale (diff times)
+
+	Situation : 
+
+
+	Situation : LR happened overnight, huge pressure, executives, customers
+
+	What i did : Led and formulated a Quick reaction team , we made a list of areas that have highest hits
+
+				Members, 1 scale if more person engage customers, These were tasked at learning on this feature.
+				
+				update every hour for 2 weeks.
+
+	Outcome : very happy and got awards for customer service.
+
+
+Story 7 - Initiative, Drive, Innovation
+
+	Situation : Troubleshooting issues for 25 customers on 5 different products - major to and fro mails without
+	             outcomes, repetitive work 
+
+	What i did : Trails
+
+	Outcome : wow
+
+
+	Situation :  We had a silent period during the Christmas vacation
+	
+	What i did : Startup Idea
+	
+	Outcome : wow
+
+
+Story 8 - Technical / Architecture prowness
+
+	Situation : TVA, Very complicated system with a small experience3-4 years,. Senior people left at the time
+	
+	What i did : i learnt the system quickly...i put down a wiki of my learnings 
+	and collected document in one space and logical way
+	
+	Outcome :   i was made tech lead of 8-9 products
+
+
+Story 9 :  When failed ? 
+
+	Situation : 2 years back We were doing a proof of concept for a DbSync project. 
+	I mis interpreted the scope of a feature in one of our discussion while my manager meant something else
+	
+	we said want a way of configuring profile in the system..in the weight ofa heavy discussion this 
+	fact became small...
+	
+	i assumed a script or client over a API...he was meaning a UI
+	
+	What i did : We did have MOM but this suttle word way caused confusion..
+	
+	Outcome : I learnt a costly mistake that documentation and clarifying even seemingly small aspects are prime 
+	           importance.
+	
+
+
+General : The guys i spoke to were very friendly and very good technically. 
+
+This domain looks very complementary to what i have been doing
+
+When i can i hear back from you ?
+
+Closing
+********************
+
+I would like to thank you and everyone who was part of this process.
+
+Would like to reiterate that Given an opportunity i would love to be part of
+this team and add great value to it to the best of my abilities.
+
+Thank you for taking time to speak to me and have a nice day ahead.
+
+
+
+
+
+
+Story 3 :
+
+	Situation : 
+	
+	Action : 
+	
+	Result: 
+
+Story 4 :
+
+	Situation : 
+	
+	Action : 
+	
+	Result: 
+
+Story 5 :
+
+	Situation : 
+	
+	Action : 
+	
+	Result: 
+
+Story 6 - Dynamic
+
+	Situation : 
+	
+	Action : 
+	
+	Result: 
+
+
+--A tough performance situation you were in (the Situation),
+
+--the key things that you did (stuff that you specifically did) to deal with that situation,
+ the action you took, all the details...
+
+--what happened as a result for you and your company (positive outcomes preferred, but not always necessary)
+
+Dig deeper into what the situation was, 
+but especially be ready to dig into the details of what you did, why you did that, 
+and how the skills for the position in question were used in that situation.
+
+5. Stay classy.  Never bash people in your stories.  
+Talk about challenges when you're setting up the situation, but don't bash bosses, 
+co-workers or customers.  Just talk about how you worked through the challenges.
+
+6. Once you have your six stories down cold, research the 
+dimensions/areas usually probed by interviewers in a behavioral interview.  
+Create a grid for the stories that you think best matches the dimensions you'll see.  
+Teamwork, Communication, Drive, Leadership, Project Management, etc. 
+
+
+***************************SOFT SKILLS Implementation**************************************
+
+
+
+
 

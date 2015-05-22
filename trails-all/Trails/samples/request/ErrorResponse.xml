@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<trails>
+    <errors>
+        <error>
+            <code>merchandiser2</code>
+            <message>PropertyFilesOnly</message>
+        </error>
+    </errors>
+</trails>

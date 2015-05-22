@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<trails>
+    <executeProfileRequest>
+        <componentName>merchandiser</componentName>
+        <profile>PropertyFilesOnly</profile>
+        <hint>Issue with Tata classifications on 12/12</hint>
+        <description>The description of the issue was as below....</description>
+        <safeWord>tatalive</safeWord>
+    </executeProfileRequest>
+</trails>

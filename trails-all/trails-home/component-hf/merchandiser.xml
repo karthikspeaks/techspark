@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trailsDefinition>
+    <components>
+        <component>
+            <componentName>merchandiser</componentName>
+            <baseDirectory>E:/Sample/vcm/</baseDirectory>
+            <email>kamohan2@cisco.com</email>
+
+            <profiles>
+                <profile id="PropertyFilesOnly">
+                    <description>Export property Files</description>
+                    <task ref="configurationFile"/>
+					<task ref="envFile"/>
+					
+                    <transport>mail</transport>
+                </profile>
+
+                <profile id="LogFilesOnly">
+                    <description>Export log Files</description>
+                    <task ref="loggingFile"/>
+
+                    <transport>mail</transport>
+                </profile>
+
+                <profile id="PropertyFileAndLogFile" enable="false">
+                    <description>Export property and log Files</description>
+                    <task ref="configurationFile"/>
+                    <task ref="loggingFile"/>
+
+                    <transport>mail</transport>
+                </profile>
+            </profiles>
+
+            <taskDef id="configurationFile" type="propertyTask">
+				<description>Export prop Files</description>
+                <param name="propertyFileName" value="vcm.properties"/>
+                <param name="propertyFilePath" value="etc/"/>
+            </taskDef>
+
+            <taskDef id="loggingFile" type="logTask">
+				<description>Export log Files</description>
+                <param name="logFileName" value="vcm.log"/>
+                <param name="logFilePath" value="log/"/>
+            </taskDef>
+			
+			<taskDef id="envFile" type="envTask" >
+				<description>Export property and log Files</description>
+			</taskDef>
+        </component>
+    </components>
+</trailsDefinition>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:spi="http://www.springframework.org/schema/integration"
+       xmlns:context="http://www.springframework.org/schema/context"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/integration
+	    http://www.springframework.org/schema/integration/spring-integration.xsd"
+       default-autowire="byName">
+
+    <context:annotation-config/>
+    <context:component-scan base-package="com.cisco"/>
+
+    <spi:channel id="serviceRequestInChannel"/>
+    <spi:channel id="serviceRequestOutChannel"/>
+    <spi:channel id="profileTaskSplitChannel"/>
+    <spi:channel id="profileTaskRouterChannel"/>
+
+    <spi:channel id="routerOutPropTaskChannel">
+        <spi:queue capacity="3"/>
+    </spi:channel>
+
+    <spi:channel id="routerOutLogTaskChannel">
+        <spi:queue capacity="3"/>
+    </spi:channel>
+
+    <spi:channel id="routerOutEnvTaskChannel">
+        <spi:queue capacity="3"/>
+    </spi:channel>
+
+    <spi:channel id="taskCompleteChannel"/>
+
+    <spi:channel id="zipperInChannel"/>
+    <spi:channel id="routerInTransportChannel"/>
+
+    <spi:channel id="routerOutMailTransportChannel">
+        <spi:queue capacity="5"/>
+    </spi:channel>
+
+    <spi:channel id="routerOutFtpTransportChannel">
+        <spi:queue capacity="5"/>
+    </spi:channel>
+</beans>
