@@ -35,7 +35,7 @@ public class SwapNoTemp {
         int a = 5; //101
         int b = 4; //100
 
-        System.out.println( !a );//010
+        System.out.println( a );//010
     }
 
 }

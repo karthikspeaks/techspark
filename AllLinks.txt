@@ -1,3 +1,5 @@
+
+
 R981037
 
  2 = x - 0.3x
@@ -12,6 +14,16 @@ http://www.slideshare.net/ewolff/10-typical-problems-in-enterprise-java-applicat
 http://java.dzone.com/articles/top-10-causes-java-ee
 
 ********
+
+Scrum Vs Kanban (KANBAN)
+https://www.atlassian.com/agile/kanban
+
+Terracota Application Clustering
+http://www.javaworld.com/article/2077978/open-source-tools/open-source-java-projects-terracotta.html
+
+
+Modeliing in Cassandra
+http://www.datastax.com/dev/blog/basic-rules-of-cassandra-data-modeling
 
 Programs
 http://www.java2novice.com/java-file-io-operations/
@@ -67,7 +79,6 @@ http://javapapers.com/core-java/java-instrumentation/
 
 Programming tests
 http://www.programcreek.com/2012/11/top-10-algorithms-for-coding-interview/
-
 
 Search 
 sorting
@@ -147,7 +158,6 @@ http://www.springbyexample.org/examples/index.html
 
 http://splashfind.in/Top_100_Indian_Job_Websites.html
 
-
 BUILD REST Service
 
 JAX - WS
@@ -155,6 +165,10 @@ http://docs.oracle.com/javaee/6/tutorial/doc/giepu.html
 
 Spring Rest
 https://spring.io/guides/gs/rest-service/
+
+1pp pho
+id 
+address proof
 
 
 SQL Practice
@@ -174,6 +188,13 @@ http://arquillian.org/guides/getting_started/
 http://docs.jboss.org/arquillian/reference/1.0.0.Alpha1/en-US/html_single/
 http://www.javaworld.com/article/2099020/open-source-tools/integrating-arquillian-and-jbehave.html
 http://www.citrusframework.org/
+
+Integration testing with Docker and Aquillian using CUBE
+http://www.lordofthejars.com/2014/11/arquillian-cube-lets-zap-all-bugs-even.html
+
+Integration testing with Overcast and Docker with TESTNG
+http://blog.xebia.com/2014/10/13/fast-and-easy-integration-testing-with-docker-and-overcast/
+
 
 Comparison of behaviour driven testing
 http://java.dzone.com/articles/brief-comparison-bdd
@@ -1418,7 +1439,7 @@ public class MyQuickSort {
     }
  
     private void quickSort(int lowerIndex, int higherIndex) {
-         
+         1
         int i = lowerIndex;
         int j = higherIndex;
         // calculate pivot number, I am taking pivot as middle index number
@@ -1488,7 +1509,9 @@ suddep 1st floor 13.4 4th may morning
 
 13K Subham
 
-
+Elastic search
+Splunk
+Apache mahout
 ***************************SOFT SKILLS Implementation**************************************
 
 http://www.right.com/wps/wcm/connect/right-us-en/home/thoughtwire/categories/career-work/answers-to-7-tough-interview-questions
@@ -1496,6 +1519,9 @@ http://www.right.com/wps/wcm/connect/right-us-en/home/thoughtwire/categories/car
 2-3 min stories
 
 Dimensions 
+
+Motivate :
+http://www.reliableplant.com/Read/6046/people-management-motivating
 
 Teamwork, Communication, Drive, Leadership, Project Management, Dynamic , 
 
@@ -1512,21 +1538,80 @@ http://www.mindtools.com/pages/article/newTMM_79.htm
 
 Story 2 : Leadership 
 
-	Ability to inspire, Keep up confidence and maintain team morale (diff times)
+http://www.careerprofiles.info/leadership-interview-questions-answers.html
 
-	Situation : 
+**
+Explain a situation where you served as a leader during: a group project, an organized work project or activity, 
+or a community service project. Explain in detail your role and how individuals responded to your leadership.
 
+Please provide an example of how you've demonstrated leadership skills.
+Please share with me time when you effectively delegated.
+Tell me of instance where you lead by example.
+Explain a situation where you had an opinion that differed from a manager. Were you able to persuade the manager to change his or her opinion?
+Explain a time when subordinates you supervised disagreed with your directives. How did you handle it?
+Tell me about someone you have mentored or coached to achieve success?
+How do you resolve conflict? What specific strategies have you used to be successful?
+If your managers were asked to rate your leadership skills, how would they reply? What would subordinates say about your leadership style?
 
-	Situation : LR happened overnight, huge pressure, executives, customers
+How frequently do you meet with project members?
+Identify important project members?
+What steps do you take to motivate others?
+Explain how you've solved a conflict by utilizing effective listening skills?
+How do you organize projects and prioritize tasks?
+Provide examples of when and why you were satisfied with past project results?
+Can you reach project objectives in fast-paced settings?
+Do you meet project deadlines? If you haven't met a deadline in the past, explain why.
+Do you effectively delegate responsibilities? Could you have better utilized team members' assistance in the past?
 
-	What i did : Led and formulated a Quick reaction team , we made a list of areas that have highest hits
+Explain a circumstance where you made a decision without all the relevant facts.
+What steps do you take to resolve complicated problems?
+Explain a time when you changed an opinion after acquiring new facts and data.
+Explain a situation where you made an incorrect conclusion. What factors led to it?
+Should a decision maker be right all the time?
+
+Do you prefer relaying information through public speaking or written reports?
+How do you formulate arguments and present them to others?
+What are other ways of communicating aside from speaking? How do you utilize non-verbal communication?
+How do you clarify unclear or vague messages?
+What steps do you take to remain engaged during conversations?
+	
+	**
+	
+	
+	Listen, 
+	Ability to inspire, 
+	Keep up confidence and maintain team morale (diff times),
+	effectively communicating vision, 
+	empowering others - Code stewards, QC control build to be released to customer,
+	Delegation..
+	Intution
+	positive , humour
+
+	sudo ln -s /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/ CurrentJDK
+
+	Situation : LR happened overnight, huge pressure extra work from others left, executives, customers, 
+
+	What i did : 
+	            I  organised a meeting to discuss strategies  
+	            Led and formulated a Quick reaction team , we made a list of areas that have highest hits
 
 				Members, 1 scale if more person engage customers, These were tasked at learning on this feature.
 				
 				update every hour for 2 weeks.
 
-	Outcome : very happy and got awards for customer service.
+	Outcome : 
+			Involving the entire team in the process of addresses the challenges we faced and finding a solution made them feel empowered. 
 
+			Management very happy and we got awards for customer service.
+
+	
+	Situation : Acquisition of NDS by Cisco, Team was anxious, Productivity was dipping , 
+	
+	What i did : 
+	
+	Outcome : 
+	
+	
 
 Story 7 - Initiative, Drive, Innovation
 
@@ -1560,7 +1645,7 @@ Story 9 :  When failed ?
 	Situation : 2 years back We were doing a proof of concept for a DbSync project. 
 	I mis interpreted the scope of a feature in one of our discussion while my manager meant something else
 	
-	we said want a way of configuring profile in the system..in the weight ofa heavy discussion this 
+	we said want a way of configuring profile in the system..in the weight of a heavy discussion this 
 	fact became small...
 	
 	i assumed a script or client over a API...he was meaning a UI
@@ -1587,10 +1672,6 @@ Would like to reiterate that Given an opportunity i would love to be part of
 this team and add great value to it to the best of my abilities.
 
 Thank you for taking time to speak to me and have a nice day ahead.
-
-
-
-
 
 
 Story 3 :
@@ -1646,10 +1727,195 @@ dimensions/areas usually probed by interviewers in a behavioral interview.
 Create a grid for the stories that you think best matches the dimensions you'll see.  
 Teamwork, Communication, Drive, Leadership, Project Management, etc. 
 
-
 ***************************SOFT SKILLS Implementation**************************************
 
 
+
+
+
+
+
+
+293291940300714
+Sarjapura
+Kaggadaspura
+
+Electronics city
+Whitefiled
+
+
+http://buzzingbubs.com/bangalore/school-admission-process-forms
+
+Things to do...
+
+water bill sort out..
+
+PAN cards - usha , mom
+Income Tax fix
+
+Take all personal stuff...
+Plan for Marriage day
+
+RSU vest prev -    DONE
+
+current enquire
+All files backup
+All payslips         ----------------DONE
+All Form 16's
+Change all emails from NDS / cisco to Personal
+
+mac desktop back up
+desktop backup
+
+Others 
+*****
+
+Usha Pan
+
+Find localities - Decide villas vs Home
+
+Ash school hunt in localities
+
+Malur handle
+
+Claim LTA
+
+Gate fix
+
+Tank fix 
+
+Suryanagar Occupation Certificate followup - Sat
+Mom registration apply..Sat
+	- PAN STARTED
+
+Close demat HDFC
+
+Sharekhan pay 
+
+Election card for everyone – started  Done on June1
+
+Leave Data
+**********
+
+Mon 18 /tue 19th  leave
+
+Wed 11 sept leave – not wel
+
+Tata Death leave
+
+Birthday leave
+
+23 sep Mahalaya amavasya leave
+
+Chamaraj nagar wed(1 oct) leave along with thu and Fri holiday
+
+Shutdown leaves
+
+Recent Euromonitor leave
+
+Friday and monday this week
+
+******************
+
+ING Vysya
+
+sx20 power
+GPS stand
+
+Canara bank
+Ash photos / Videos on cloud - started
+
+Usha driving
+
+Gas connection for everyone
+
+Car Items Left
+*************
+
+Check Engine Light again
+Polish
+Dent / Remove
+Engine Cover
+
+Acc
+Music System
+alloy wheels
+Washer m/c
+Easy jack
+
+
+Store everyones number
+
+Party Team
+
+
+Write few recommendations on Linkedin
+
+Take code / documents
+
+http://www.mobileironman.com/new-hire-reading-list/
+
+http://www.relakhs.com/plots-for-sale-bangalore-bda-auction/
+
+https://eproc.karnataka.gov.in/eprocurement/common/eproc_auctions_list.seam
+
+
+Mobile things to do...
+*************************
+
+New joiners start up kit..
+dev env
+URLS to important things
+E2E testing
+Quick install
+
+Process things - leave links, a/c opening
+
+Enhance code coverage and reporting.
+Crucible
+
+eclipse formatting files
+Check in standards
+Automatic code review files in JIRA
+Code review checklist
+
+What can be done
+
+Patent
+Innovative product
+Something on ADS monetization
+
+What could be built 
+
+a framework for easing repetitive work
+Infrastructure based on Openstack on demand
+some generic way of new code setup in the dev servers or demo servers - puppet
+Analytics POC to take some params and contribute to new product
+Vulnerability scanner for web apps
+Doctor for ingested data
+Tool to simplify static data ingest - XML import or UI
+Simulators for the apps
+
+0004987182 nikita july 1st
+
+***PAN
+
+
+Dear Sir / Madam,
+
+We refer to your abovementioned application & PAN application documents received from you on March 30, 2015. On verification of your application and PAN application documents, the following discrepancy(ies) is/are observed by us:
+
+Date of birth not mentioned in the proof submitted.
+
+    Submit proof of identity of applicant where date of birth in application exactly matches with date of birth in proof.
+
+Name in Proof of Residential Address does not contain last name in expanded form as mentioned in application.
+
+    Submit proof of residential address where name in application exactly matches with name in proof.
+
+Name in Proof of Identity does not contain last name in expanded form as mentioned in application.
+
+    Submit proof of identity where name in application exactly matches with name in proof.
 
 
 
